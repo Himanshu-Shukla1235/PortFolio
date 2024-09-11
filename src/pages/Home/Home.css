@@ -1,0 +1,327 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; /* Ensure full width */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* #root{
+  width: 100%;
+} */
+
+.homepage-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #9b59b6; /* Violet color */
+  padding: 20px;
+  max-height: 15vh;
+  color: white;
+  height: 10vh;
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps the header above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80vh;
+  height: 9vh; /* Updated height */
+  border-radius: 30px;
+  background: #1f1e1e;
+  
+  box-shadow: 3px 3px 6px #6e2c9198,
+    /* Subtle darker violet shadow */ -3px -3px 6px #00000000; /* Subtle lighter violet highlight */
+}
+
+.homepage-header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.homepage-header nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 1px;
+  font-family: sans-serif;
+}
+
+/* * -------------------------------------- main --------------------------------------------------- */
+
+.homepage-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+  margin-top: 6em;
+  background-color: #dedede;
+  background: #9b59b6;
+  width: 100%; /* Ensure full width */
+  gap: 2em;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: flex-start;
+ 
+  width: 130vh;
+  color: rgb(0, 0, 0);
+  padding: 3em;
+  height: 254px;
+  border-radius: 30px;
+  background: #fffefeef; /* Semi-transparent white background */
+  
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+    /* Increased shadow size and opacity */ -5px -5px 15px
+      rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
+  background: #9b59b6; /* Violet color */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
+     */
+     background: #1f1e1e;
+}
+.card h1{
+  color: #9b59b6;;
+  /* border: solid black 1px; */
+  margin-bottom: -0.1em;
+
+}
+.card p{
+  /* border: solid black 1px; */
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+.mern {
+  /* border: solid black 1px; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.mongo {
+  width: 5vh;
+  height: 5vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid black 1px;
+}
+.react {
+  width: 5vh;
+  height: 5vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=9vlfB9hjA1lX&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid black 1px;
+}
+.nodejs {
+  width: 5vh;
+  height: 5vh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid black 1px;
+ 
+}
+.expressjs{
+  width: 5vh;
+  height: 5vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid black 1px;
+
+}
+.side1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40vh;
+  height: 40vh; /* Updated height */
+  border-radius: 30px;
+  background: #9b59b6; /* Violet color */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+  padding: 2em;
+  gap: 1em;
+}
+
+.Dp {
+  width: 19vh;
+  height: 19vh;
+  background-color: white;
+  border-radius: 1000px;
+  background-image: url("https://i.pinimg.com/550x/e9/71/13/e9711369575daa315e5f4239c3536363.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80vh;
+  height: 60vh; /* Updated height */
+  border-radius: 30px;
+  background: #9b59b6; /* Violet color */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+}
+/* ---------------------------------- Footer ----------------------------- */
+
+.homepage-footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* From Uiverse.io by adamgiebl */
+.thin-line {
+  height: 5px; /* Adjust the thickness of the line */
+  width: 90%;
+  background-color: #ebebeb; /* Change to your preferred color */
+  margin: 20px 0; /* Adjust spacing around the line */
+  background: #9b59b6;
+  border-radius: 5em;
+}
+
+.thin-line2 {
+  height: 5px; /* Adjust the thickness of the line */
+  width: 90%;
+  background-color: #ebebeb; /* Change to your preferred color */
+  margin: 20px 0; /* Adjust spacing around the line */
+  background: #ffffff;
+  border-radius: 5em;
+}
+
+.side1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 30px;
+  background: #9b59b6; /* Violet color */
+  box-shadow: inset 5px 5px 15px #6e2c91,
+    /* Inner shadow */ inset -5px -5px 15px #00000000; /* Adjusted highlight */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .card1,
+  .card2,
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .homepage-main {
+    padding: 10px;
+    gap: 1em;
+  }
+
+  .intro {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .homepage-header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .Dp {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .card,
+  .side1 {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-header nav ul {
+    gap: 10px;
+  }
+
+  .homepage-main {
+    margin-top: 5em;
+  }
+
+  .card {
+    padding: 1em;
+    width: 95%;
+  }
+
+  .side1,
+  .card1,
+  .card2 {
+    width: 95%;
+    height: auto;
+  }
+
+  .thin-line,
+  .thin-line2 {
+    width: 100%;
+  }
+}

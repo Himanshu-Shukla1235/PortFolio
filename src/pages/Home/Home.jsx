@@ -1,6 +1,13 @@
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Home.css"; // Import CSS file for styling
+import Skills from "../Components/Home/Skills";
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import ProjectsPage from "../Components/Home/project";
 
 const HomePage = () => {
   return (
@@ -10,22 +17,33 @@ const HomePage = () => {
           <nav>
             <ul>
               <li>
-                <Link to="home" smooth={true} duration={500}>
-                  Home
+              <HomeIcon style={{fontSize:'19px',marginBottom:'2.5px'}}></HomeIcon>
+                <Link to="home" smooth={true} duration={20} offset={-90}>
+                 Home
                 </Link>
               </li>
               <li>
-                <Link to="Projects" smooth={true} duration={500}>
+              <MilitaryTechIcon style={{fontSize:'19px',marginBottom:'2.5px'}}></MilitaryTechIcon>
+                <Link to="Skills" smooth={true} duration={20} offset={-220}>
+                  Skills
+                </Link>
+              </li>
+              <li>
+              <AppRegistrationIcon style={{fontSize:'19px',marginBottom:'2.5px'}}></AppRegistrationIcon>
+                <Link to="Projects" smooth={true} duration={20}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="about" smooth={true} duration={500}>
+
+              <InfoIcon style={{fontSize:'19px',marginBottom:'2.5px'}}></InfoIcon>
+                <Link to="about" smooth={true} duration={20}>
                   About
                 </Link>
               </li>
               <li>
-                <Link to="contact" smooth={true} duration={500}>
+              <PhoneEnabledIcon style={{fontSize:'19px',marginBottom:'2.5px'}}></PhoneEnabledIcon>
+                <Link to="contact" smooth={true} duration={20}>
                   Contact
                 </Link>
               </li>
@@ -37,30 +55,48 @@ const HomePage = () => {
       <main className="homepage-main">
         <section className="intro" id="home">
           <div className="card">
-            <h1>Full-Stack Developer</h1>
-            <p style={{ color: "white" }}>
-              "Passionate Full Stack Developer crafting seamless, scalable web
-              applications with a focus on user-centric design and robust
-              backend solutions. Transforming ideas into digital experiences
-              through cutting-edge technology and innovative problem-solving."
-            </p>
-            <div className="mern">
-              <div className="mongo"></div>
-              <div className="expressjs"></div>
-              <div className="react"></div>
-              <div className="nodejs"></div>
+            <div className="card_box1">
+              {" "}
+              <h1>Full-Stack Developer</h1>
+              <p style={{}}>
+                "Passionate Full Stack Developer crafting seamless, scalable web
+                applications with a focus on user-centric design and robust
+                backend solutions. Transforming ideas into digital experiences
+                through cutting-edge technology and innovative problem-solving."
+              </p>
+              <div className="mern">
+                <div className="mongo"></div>
+                <div className="expressjs"></div>
+                <div className="react"></div>
+                <div className="nodejs"></div>
+              </div>
             </div>
           </div>
           <div className="side1">
             <div className="Dp"></div>
+            <p style={{  }}>Himanshu Shukla</p>
             <div className="myinfo">
-              <p style={{ color: "white" }}>Himanshu Shukla</p>
+              <div className="my_coding_profiles"></div>
+              <div className="mylogoes">
+                <a href="" className="mylogoes_1"></a>
+                <a href="" className="mylogoes_2"></a>
+                <a href="" className="mylogoes_3"></a>
+                <a href="" className="mylogoes_4"></a>
+              </div>
             </div>
           </div>
         </section>
+        <section className="codingProfiles">hello</section>
+        <div className="thin-line3"></div>
+        <section className="Skills">
+          <div className="skills_">
+            <h1>Skills</h1> <Skills></Skills>
+          </div>
+        </section>
+        <div className="thin-line3"></div>
         <section id="Projects">
-          <div className="card2">
-            <div className="thin-line2"></div>
+          <div className="project_sec">
+           <div><ProjectsPage></ProjectsPage></div>
           </div>
         </section>
       </main>

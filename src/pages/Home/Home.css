@@ -1,3 +1,11 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
 .homepage {
   display: flex;
   flex-direction: column;
@@ -8,9 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #root{
+#root {
+  max-width: 100%;
   width: 100%;
-} */
+}
 
 .homepage-header {
   display: flex;
@@ -19,9 +28,10 @@ html {
   align-items: center;
   background-color: #9b59b6; /* Violet color */
   padding: 20px;
-  max-height: 15vh;
+  max-height: 10vh;
   color: white;
-  height: 10vh;
+
+  height: 4.5vh;
   position: fixed; /* Fixes the header at the top */
   top: 0;
   left: 0;
@@ -36,11 +46,15 @@ html {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 80vh;
-  height: 9vh; /* Updated height */
+  min-width: 80vh;
+  width: auto;
+  height: 7vh; /* Updated height */
   border-radius: 30px;
   background: #1f1e1e;
-  
+  border: solid rgba(255, 255, 255, 0) 0.3px;
+  padding-right: 2em;
+  padding-left: 2em;
+
   box-shadow: 3px 3px 6px #6e2c9198,
     /* Subtle darker violet shadow */ -3px -3px 6px #00000000; /* Subtle lighter violet highlight */
 }
@@ -52,11 +66,27 @@ html {
   gap: 30px;
 }
 
+.homepage-header nav ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-size: medium;
+}
+.homepage-header nav ul li:hover {
+  background-color: #f0f0f02b;
+  color: #e6a8ff;
+}
 .homepage-header nav ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 1px;
   font-family: sans-serif;
+  cursor: pointer;
+  font-size: 0.8em;
 }
 
 /* * -------------------------------------- main --------------------------------------------------- */
@@ -68,7 +98,7 @@ html {
   align-items: center;
   flex: 1;
   padding: 20px;
-  margin-top: 6em;
+  margin-top: 4em;
   background-color: #dedede;
   background: #9b59b6;
   width: 100%; /* Ensure full width */
@@ -89,34 +119,64 @@ html {
   flex-direction: column;
   justify-content: center;
 
-  align-items: flex-start;
- 
+  align-items: center;
+
   width: 130vh;
   color: rgb(0, 0, 0);
   padding: 3em;
-  height: 254px;
+  height: 60vh;
   border-radius: 30px;
   background: #fffefeef; /* Semi-transparent white background */
-  
+
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
     /* Increased shadow size and opacity */ -5px -5px 15px
       rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
-  background: #9b59b6; /* Violet color */
+  background: #9b59b6;
   box-shadow: 5px 5px 15px #6e2c91,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
      */
-     background: #1f1e1e;
+  /* background: #1f1e1e; */
+  padding: 2em;
+  /* font-family: sans-serif; */
 }
-.card h1{
-  color: #9b59b6;;
+.card_box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: flex-start;
+
+  width: auto;
+  color: rgb(0, 0, 0);
+  padding: 3em;
+  height: auto;
+  border-radius: 30px;
+  background: #fffefeef; /* Semi-transparent white background */
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+    /* Increased shadow size and opacity */ -5px -5px 15px
+      rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
+  /* background: #9b59b6;  */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
+     */
+  /* background: #1f1e1e; */
+}
+.card h1 {
+  color: #9b59b6;
   /* border: solid black 1px; */
   margin-bottom: -0.1em;
-
 }
-.card p{
+.card p {
   /* border: solid black 1px; */
   margin-bottom: 2em;
   padding: 0.5em;
+  color: #525252;
+  font-size: 1.1em;
+
+  background-color: rgba(212, 212, 212, 0.171);
+  border-radius: 1em;
+  padding: 1em;
 }
 .mern {
   /* border: solid black 1px; */
@@ -125,54 +185,52 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   margin-bottom: 2em;
 }
 .mongo {
-  width: 5vh;
-  height: 5vh;
+  width: 7vh;
+  height: 7vh;
   background-color: rgb(0, 0, 0);
   border-radius: 10000px;
   background-image: url("https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 .react {
-  width: 5vh;
-  height: 5vh;
+  width: 7vh;
+  height: 7vh;
   background-color: rgb(0, 0, 0);
   border-radius: 10000px;
   background-image: url("https://img.icons8.com/?size=100&id=9vlfB9hjA1lX&format=png&color=000000"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 .nodejs {
-  width: 5vh;
-  height: 5vh;
+  width: 7vh;
+  height: 7vh;
   background-color: rgb(0, 0, 0);
   border-radius: 10000px;
   background-image: url("https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: solid black 1px;
- 
+  /* border: solid black 1px; */
 }
-.expressjs{
-  width: 5vh;
-  height: 5vh;
+.expressjs {
+  width: 7vh;
+  height: 7vh;
   background-color: rgb(255, 255, 255);
   border-radius: 10000px;
   background-image: url("https://img.icons8.com/?size=100&id=PZQVBAxaueDJ&format=png&color=000000"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: solid black 1px;
-
+  /* border: solid black 1px; */
 }
 .side1 {
   display: flex;
@@ -180,13 +238,15 @@ html {
   justify-content: flex-start;
   align-items: flex-start;
   width: 40vh;
-  height: 40vh; /* Updated height */
+  min-height: 60vh;
   border-radius: 30px;
   background: #9b59b6; /* Violet color */
   box-shadow: 5px 5px 15px #6e2c91,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
   padding: 2em;
-  gap: 1em;
+  gap: 0.1em;
+  /* border: solid black 1px; */
+  font-family: sans-serif;
 }
 
 .Dp {
@@ -198,21 +258,104 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border: solid black 1px;
+  margin-top: -4em;
 }
-
-.card2 {
+.myinfo {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
-  width: 80vh;
-  height: 60vh; /* Updated height */
-  border-radius: 30px;
-  background: #9b59b6; /* Violet color */
+  background-color: white;
+  border-radius: 1em;
+  height: auto;
+  width: 30vh;
   box-shadow: 5px 5px 15px #6e2c91,
-    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(255, 0, 0) 1px;
 }
+.side1 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(62, 62, 62);
+  font-size: large;
+  font-weight: 5px;
+  border-radius: 1em;
+  width: 10em;
+  height: 2em;
+  text-align: center;
+  margin-bottom: 3em;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+    /* Increased shadow size and opacity */ -5px -5px 15px
+      rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
+  /* background: #9b59b6;  */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000;
+  color: #ffffff;
+}
+.my_coding_profiles {
+  width: 10vh;
+  height: 10vh;
+}
+.mylogoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em;
+
+  border-radius: 0.5em;
+  background: #ffffff; /* Violet color */
+}
+.mylogoes_1 {
+  width: 4vh;
+  height: 4vh;
+
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: solid black 1px; */
+}
+.mylogoes_2 {
+  width: 4vh;
+  height: 4vh;
+
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: solid black 1px; */
+}
+.mylogoes_3 {
+  width: 4vh;
+  height: 4vh;
+  
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=LPcVDft9Isqt&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: solid black 1px; */
+}
+.mylogoes_4 {
+  width: 4vh;
+  height: 4vh;
+ 
+  border-radius: 10000px;
+  background-image: url("https://img.icons8.com/?size=100&id=13731&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: solid black 1px; */
+}
+
+
 /* ---------------------------------- Footer ----------------------------- */
 
 .homepage-footer {
@@ -256,7 +399,66 @@ html {
   box-shadow: inset 5px 5px 15px #6e2c91,
     /* Inner shadow */ inset -5px -5px 15px #00000000; /* Adjusted highlight */
 }
+.codingProfiles{ display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200vh;
+  height: 10vh; /* Updated height */
+  border-radius: 30px;
+  background: #9b59b6; /* Violet color */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+  /* margin-top: 4vh; */
 
+}
+.thin-line3 {
+  height: 3px; /* Adjust the thickness of the line */
+  width: 110%;
+  background-color: #ebebeb; /* Change to your preferred color */
+  /* Adjust spacing around the line */
+  background: #ffffff;
+  border-radius: 5em;
+  margin-top: 8em;
+}
+.skills_ {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200vh;
+  height: auto; /* Updated height */
+  border-radius: 30px;
+  background: #9b59b6; /* Violet color */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+  /* margin-top: 4vh; */
+  font-family: sans-serif;
+}
+.skills_ h1 {
+  color: rgb(0, 0, 0);
+  font-size: 3em;
+  font-family: sans-serif;
+}
+
+.project_sec {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 190vh;
+  width: auto;
+  height: auto; /* Updated height */
+  border-radius: 30px;
+  background: #9b59b6; /* Violet color */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+  margin-top: 4vh;
+  padding: 3em;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
   .card1,

@@ -100,8 +100,9 @@ html {
   flex: 1;
   padding: 20px;
   margin-top: 4em;
-  background-color: #dedede;
+  background-color: hsl(0, 0%, 87%);
   background: #9b59b6;
+  
   width: 100%; /* Ensure full width */
   gap: 2em;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */

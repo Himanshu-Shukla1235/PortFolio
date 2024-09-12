@@ -694,7 +694,17 @@ html {
   .card1 {
     
     width: 80%;
+    
    
+  }
+
+  .card {
+    margin-top: 0.4em;
+    width: auto;
+   
+  }
+  .card_box1{
+width: auto;
   }
   #contact{
 display: none;
@@ -702,6 +712,7 @@ display: none;
   .homepage-header {
     height: auto;
     padding: 10px;
+  
   }
 
   .Dp {

@@ -102,6 +102,7 @@
     }
   
     .projects-container {
+        padding-top: 1em;
         overflow-y: scroll;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -115,6 +116,7 @@
         /* Scrollbar styling for Firefox */
         scrollbar-width: thin; /* Options: auto, thin, none */
         scrollbar-color: #6e2c91 #2b2b2b; /* Thumb color and track color */
+        overflow-x: hidden;
     }
     
     /* Scrollbar styling for WebKit browsers */
@@ -147,8 +149,10 @@
     .project-card {
       width: 45%; /* Adjust card width for tablets */
       max-width: 400px; /* Limit the max width */
-      min-height: 55vh;
+      min-height: 60vh;
       width: auto;
+      height: auto;
+      
     }
   }
   

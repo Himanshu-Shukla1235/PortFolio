@@ -689,30 +689,25 @@ html {
   .homepage-header nav ul {
     flex-direction: row;
     gap: 15px;
-    
   }
   .card1 {
-    
     width: 80%;
-    
-   
   }
 
   .card {
     margin-top: 0.4em;
     width: auto;
-   
+    display: none;
   }
-  .card_box1{
-width: auto;
+  .card_box1 {
+    width: auto;
   }
-  #contact{
-display: none;
+  #contact {
+    display: none;
   }
   .homepage-header {
     height: auto;
     padding: 10px;
-  
   }
 
   .Dp {
@@ -724,15 +719,18 @@ display: none;
   .side1 {
     padding: 1em;
   }
-  .codingProfiles{
+  .codingProfiles {
     width: auto;
     height: auto;
     flex-direction: column;
   }
-  .codef{
+  .codef {
     width: auto;
     height: auto;
-  }.leetc{
+
+    gap: 0.2em;
+  }
+  .leetc {
     width: auto;
     height: auto;
   }

@@ -149,9 +149,10 @@
     .project-card {
       width: 45%; /* Adjust card width for tablets */
       max-width: 400px; /* Limit the max width */
-      min-height: 60vh;
+      min-height: 75vh;
       width: auto;
       height: auto;
+      
       
     }
   }

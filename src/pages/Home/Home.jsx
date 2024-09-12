@@ -11,6 +11,8 @@ import ProjectsPage from "../Components/Home/project";
 import ContactPage from "../Components/Home/contactPage";
 import AboutPage from "../Components/Home/aboutPage";
 import Tooltip from "../Components/Additional/toolTip.jsx";
+import BoxAnimation from "../Components/Additional/animatedBox.jsx";
+import Gearbox from "../Components/Additional/animation2.jsx";
 
 const HomePage = () => {
   return (
@@ -69,7 +71,7 @@ const HomePage = () => {
           <div className="card">
             <div className="card_box1">
               {" "}
-              <h1>Software Engineer</h1>
+              <h1>Software Engineer </h1>
               <p style={{}}>
                 Hello! I'm Himanshu Shukla, a passionate software engineer with
                 a keen interest in solving complex problems through innovative
@@ -105,38 +107,38 @@ const HomePage = () => {
                 <li>3rd-year</li>
               </div>
               <div className="mylogoes">
-      <Tooltip content="LinkedIn" position="top">
-        <a
-          href="https://www.linkedin.com/in/himanshu-shukla-444756251/"
-          className="mylogoes_1"
-          style={{ display: 'inline-block' }} // Ensure the element is visible
-        ></a>
-      </Tooltip>
+                <Tooltip content="LinkedIn" position="top">
+                  <a
+                    href="https://www.linkedin.com/in/himanshu-shukla-444756251/"
+                    className="mylogoes_1"
+                    style={{ display: "inline-block" }} // Ensure the element is visible
+                  ></a>
+                </Tooltip>
 
-      <Tooltip content="GitHub" position="top">
-        <a
-          href="https://github.com/Himanshu-Shukla1235"
-          className="mylogoes_2"
-          style={{ display: 'inline-block' }} // Ensure the element is visible
-        ></a>
-      </Tooltip>
+                <Tooltip content="GitHub" position="top">
+                  <a
+                    href="https://github.com/Himanshu-Shukla1235"
+                    className="mylogoes_2"
+                    style={{ display: "inline-block" }} // Ensure the element is visible
+                  ></a>
+                </Tooltip>
 
-      <Tooltip content="Other link 1" position="top">
-        <a
-          href="#"
-          className="mylogoes_3"
-          style={{ display: 'inline-block' }} // Ensure the element is visible
-        ></a>
-      </Tooltip>
+                <Tooltip content="Other link 1" position="top">
+                  <a
+                    href="#"
+                    className="mylogoes_3"
+                    style={{ display: "inline-block" }} // Ensure the element is visible
+                  ></a>
+                </Tooltip>
 
-      <Tooltip content="Other link 2" position="top">
-        <a
-          href="#"
-          className="mylogoes_4"
-          style={{ display: 'inline-block' }} // Ensure the element is visible
-        ></a>
-      </Tooltip>
-    </div>
+                <Tooltip content="Other link 2" position="top">
+                  <a
+                    href="#"
+                    className="mylogoes_4"
+                    style={{ display: "inline-block" }} // Ensure the element is visible
+                  ></a>
+                </Tooltip>
+              </div>
             </div>
           </div>
         </section>
@@ -197,7 +199,9 @@ const HomePage = () => {
       </main>
 
       <footer className="homepage-footer">
+      <BoxAnimation></BoxAnimation>
         <p>&copy; 2024 My Website. All rights reserved.</p>
+        <BoxAnimation></BoxAnimation>
       </footer>
     </div>
   );

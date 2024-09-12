@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/PortFolio/', // Ensure this matches your GitHub repo name
+  base: '/PortFolio/', // Make sure this matches your GitHub Pages repository
   build: {
-    outDir: 'build', // Change this to use 'build' folder instead of 'dist'
+    outDir: 'build', // Output directory for build
   },
 });

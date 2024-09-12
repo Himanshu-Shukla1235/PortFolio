@@ -142,14 +142,14 @@ html {
 .card_box1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 
   align-items: flex-start;
 
   width: auto;
   color: rgb(0, 0, 0);
   padding: 3em;
-  height: auto;
+  height: 50vh;
   border-radius: 30px;
   background: #fffefeef; /* Semi-transparent white background */
 
@@ -161,22 +161,24 @@ html {
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
      */
   /* background: #1f1e1e; */
+  font-family: sans-serif;
 }
 .card h1 {
   color: #9b59b6;
   /* border: solid black 1px; */
   margin-bottom: -0.1em;
+  font-size: 4em;
+  margin-top: -0.2em;
 }
 .card p {
   /* border: solid black 1px; */
   margin-bottom: 2em;
   padding: 0.5em;
-  color: #525252;
-  font-size: 1.1em;
+  color: #908e8e;
+  font-size: 1em;
 
-  background-color: rgba(212, 212, 212, 0.171);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 1em;
-  padding: 1em;
 }
 .mern {
   /* border: solid black 1px; */
@@ -235,8 +237,8 @@ html {
 .side1 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 40vh;
   min-height: 60vh;
   border-radius: 30px;
@@ -259,7 +261,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   border: solid black 1px;
-  margin-top: -4em;
+  margin-top: -2em;
 }
 .myinfo {
   display: flex;
@@ -272,9 +274,12 @@ html {
   width: 30vh;
   box-shadow: 5px 5px 15px #6e2c91,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000;
-  background-color: rgb(255, 255, 255);
-  border: solid rgb(255, 0, 0) 1px;
+  /* background-color: rgb(255, 255, 255);
+  border: solid rgb(255, 0, 0) 1px; */
+  padding: 1em;
+  gap: 2em;
 }
+
 .side1 p {
   display: flex;
   justify-content: center;
@@ -286,7 +291,7 @@ html {
   width: 10em;
   height: 2em;
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
     /* Increased shadow size and opacity */ -5px -5px 15px
       rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
@@ -295,10 +300,19 @@ html {
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000;
   color: #ffffff;
 }
-.my_coding_profiles {
-  width: 10vh;
-  height: 10vh;
+.my_inf {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-weight: 0.3em;
+  font-size: 0.9em;
+  gap: 0.6em;
+  /* border: solid red 1px; */
+  text-align: start;
+  color: grey;
 }
+
 .mylogoes {
   display: flex;
   flex-direction: row;
@@ -335,7 +349,7 @@ html {
 .mylogoes_3 {
   width: 4vh;
   height: 4vh;
-  
+
   border-radius: 10000px;
   background-image: url("https://img.icons8.com/?size=100&id=LPcVDft9Isqt&format=png&color=000000"); /* Replace with your image path */
   background-size: cover;
@@ -346,25 +360,13 @@ html {
 .mylogoes_4 {
   width: 4vh;
   height: 4vh;
- 
+
   border-radius: 10000px;
   background-image: url("https://img.icons8.com/?size=100&id=13731&format=png&color=000000"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* border: solid black 1px; */
-}
-
-
-/* ---------------------------------- Footer ----------------------------- */
-
-.homepage-footer {
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  width: 100%; /* Ensure full width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 /* From Uiverse.io by adamgiebl */
@@ -399,20 +401,138 @@ html {
   box-shadow: inset 5px 5px 15px #6e2c91,
     /* Inner shadow */ inset -5px -5px 15px #00000000; /* Adjusted highlight */
 }
-.codingProfiles{ display: flex;
-  flex-direction: column;
+.codingProfiles {
+  display: flex;
+  
+  flex-direction: row;
   text-align: center;
   justify-content: flex-start;
   align-items: center;
   width: 200vh;
-  height: 10vh; /* Updated height */
-  border-radius: 30px;
+  height: 3vh; /* Updated height */
+  border-radius: 20px;
   background: #9b59b6; /* Violet color */
   box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #0000000a; /* Adjusted highlight */
+  margin-top: -2vh;
+  gap: 3em;
+  padding: 2em;
+  font-family: sans-serif;
+  /* border: solid black 1px; */
+}
+.leetc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2em;
+  min-width: 60vh;
+  width: auto;
+  height: 9vh;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 1em;
+  gap: 0.5em;
+  
+  box-shadow: 5px 5px 15px #6e2c91,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
-  /* margin-top: 4vh; */
+}
+.leetc_img {
+  width: 4vh;
+  height: 4vh;
+
+  
+  background-image: url("https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: solid black 1px; */
+  
+}
+
+.codef {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2em;
+  min-width: 65vh;
+  width: auto;
+  height: 9vh;
+  background-color: #fcfdff;
+  color: rgb(0, 0, 0);
+  border-radius: 1em;
+  gap: 1em;
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+}
+.codef_img {
+  width: 4vh; /* Width of the element */
+  height: 4vh; /* Height of the element */
+  
+  
+  background-image: url("https://img.icons8.com/?size=100&id=jldAN67IAsrW&format=png&color=000000"); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+}
+#maxr{
+  color: grey;
+  font-size: 1em;
+}
+#mycp_title{
+  font-size: 1.1em;color: white;
+  background-color: #1f1e1e94;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+#maxrc{
+  color: rgb(111, 110, 110);
+  padding: 0.3em;
+  padding:0.2 0.5em ;
+  background-color: rgba(0, 0, 0, 0.037);
+  border-radius: 0.3em;
+  border: solid rgba(170, 170, 170, 0.247) 1px;
 
 }
+#maxrc {
+  position: relative; /* Required for positioning the tooltip */
+}
+
+#maxrc::after {
+  content: 'Check the profile'; /* Text for the tooltip */
+  position: absolute; /* Positions the tooltip relative to #maxrc */
+  bottom: 100%; /* Position above the element */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  background-color: #000000; /* Background color of the tooltip */
+  color: #fff; /* Text color */
+  padding: 5px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  white-space: nowrap; /* Prevents text from wrapping */
+  opacity: 0; /* Hide tooltip by default */
+  visibility: hidden; /* Hide tooltip by default */
+  transition: opacity 0.3s; /* Smooth fade-in effect */
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  padding: 0.8em;
+  box-shadow: 5px 5px 15px #353535,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+}
+
+#maxrc:hover::after {
+  opacity: 1; /* Show tooltip on hover */
+  visibility: visible; /* Show tooltip on hover */
+}
+
+#maxrc:hover {
+  content: ''; /* Required to display the pseudo-element */
+  display: block; /* Makes the pseudo-element a block-level element */
+  color: #660899; /* Text color */
+  border: solid 1px #660899;
+  /* Add additional styling here */
+}
+
 .thin-line3 {
   height: 3px; /* Adjust the thickness of the line */
   width: 110%;
@@ -458,6 +578,34 @@ html {
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
   margin-top: 4vh;
   padding: 3em;
+}
+
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 190vh;
+  width: auto;
+  height: auto; /* Updated height */
+  border-radius: 30px;
+  background: #9b59b6; /* Violet color */
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+  margin-top: 4vh;
+  padding: 3em;
+}
+/* ---------------------------------- Footer ----------------------------- */
+
+.homepage-footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 20vh;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 /* Responsive Design */
 @media (max-width: 1024px) {

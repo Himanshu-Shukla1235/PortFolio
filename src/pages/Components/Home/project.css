@@ -1,75 +1,89 @@
 .projects-page {
-    padding: 20px;
-    background-color: #2b2b2b; /* Dark grey background */
-    min-height: 90vh;
-    min-width: 170vh;
-    box-shadow: 5px 5px 15px #6e2c91,
-      /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
-    border-radius: 2em;
-    padding: 2em;
-    font-family: sans-serif;
-  }
-  
-  .projects-page h1 {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  
-  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    box-shadow: 5px 5px 15px #000000,
-      /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
-      padding: 3em;
-  }
-  
-  .project-card {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: auto;
-  }
-  
-  
-  .project-title {
-    font-size: 1.5em;
-    color: #333;
-  }
-  
-  .project-description {
-    font-size: 1em;
-    color: #666;
-  }
-  
-  .project-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .project-link:hover {
-    text-decoration: underline;
-  }
-  
-  .project-links {
-    margin-top: 10px;
-  }
-  
-  .social-icon {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-  }
-  
+  padding: 20px;
+  background-color: #2b2b2b; /* Dark grey background */
+  min-height: 90vh;
+  min-width: 170vh;
+  box-shadow: 5px 5px 15px #6e2c91,
+    /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
+  border-radius: 2em;
+  padding: 2em;
+  font-family: sans-serif;
+}
+
+.projects-page h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 5px 5px 15px #00000041,
+    /* Increased shadow size and opacity */ -5px -5px 15px #0000004b; /* Adjusted highlight */
+  padding: 3em;
+  border-radius: 2em;
+}
+
+.project-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.project-description {
+  font-size: 1em;
+  color: #8e8c8c;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+  margin-top: 10px;
+  color: #000000;
+  text-decoration: none;
+  margin-bottom: 1.7em;
+  /* border: solid red 1px; */
+  margin-top: 3em;
+}
+.project-links a {
+  text-decoration: none;
+  font-size: 0.5;
+  color: black;
+}
+
+.project-link:hover {
+  /* text-decoration: underline; */
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+}
+.social-icon2 {
+  width: 28px;
+  height: 28px;
+}

@@ -1,23 +1,23 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";  // Use HashRouter
 import Home from "./pages/Home/Home";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import "./App.css";
 
 function App() {
   return (
-    <>
+    <HashRouter>  {/* Use HashRouter for GitHub Pages compatibility */}
       <header>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="*" element={<ErrorPage />} /> {/* Catch-all route for 404 errors */}
-          </Routes>
-        </BrowserRouter>
+        {/* Header content (e.g., navigation) if needed */}
       </header>
-      <main></main>
-    </>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<ErrorPage />} />  {/* Catch-all route for 404 errors */}
+        </Routes>
+      </main>
+    </HashRouter>
   );
 }
 

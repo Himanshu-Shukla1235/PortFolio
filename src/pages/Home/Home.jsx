@@ -41,7 +41,7 @@ const HomePage = () => {
                 <AppRegistrationIcon
                   style={{ fontSize: "19px", marginBottom: "2.5px" }}
                 ></AppRegistrationIcon>
-                <Link to="Projects" smooth={true} duration={20}>
+                <Link to="Projects__" smooth={true} duration={20}>
                   Projects
                 </Link>
               </li>
@@ -53,7 +53,7 @@ const HomePage = () => {
                   About
                 </Link>
               </li>
-              <li>
+              <li id="contact">
                 <PhoneEnabledIcon
                   style={{ fontSize: "19px", marginBottom: "2.5px" }}
                 ></PhoneEnabledIcon>
@@ -143,11 +143,11 @@ const HomePage = () => {
           </div>
         </section>
         <section className="codingProfiles">
-          <p id="mycp_title" style={{ fontFamily: "sans-serif" }}>
+          <p id="mycp_title" style={{ fontFamily: "sans-serif"  }}>
             My coding profiles :
           </p>{" "}
           <div className="codef">
-            <a href="" className="codef_img"></a>Codeforces :{" "}
+            <a href="" className="codef_img"></a> <p style={{fontSize:'0.87em'}}>Codeforces :</p>{" "}
             <p id="maxr">Max-raing - 1100 </p>
             <a href="" style={{ textDecoration: "none" }}>
               <p
@@ -161,7 +161,7 @@ const HomePage = () => {
           </div>
           <div className="leetc">
             {" "}
-            <a href="" className="leetc_img"></a>Leetcode :{" "}
+            <a href="" className="leetc_img"></a><p style={{fontSize:'0.87em'}}>Leetcode :</p>{" "}
             <p id="maxr">Max-raing - 1600</p>
             <a
               href="https://leetcode.com/u/Himanshu_Shukla___/"
@@ -184,7 +184,7 @@ const HomePage = () => {
           </div>
         </section>
         <div className="thin-line3"></div>
-        <section id="Projects">
+        <section id="Projects__">
           <div className="project_sec">
             <div>
               <ProjectsPage></ProjectsPage>

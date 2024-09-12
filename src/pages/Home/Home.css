@@ -46,7 +46,7 @@ html {
   text-align: center;
   justify-content: center;
   align-items: center;
-  min-width: 80vh;
+  width: 80vh;
   width: auto;
   height: 7vh; /* Updated height */
   border-radius: 30px;
@@ -113,6 +113,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 2em;
+  height: auto;
 }
 
 .card {
@@ -122,10 +123,10 @@ html {
 
   align-items: center;
 
-  width: 130vh;
+  width: auto;
   color: rgb(0, 0, 0);
   padding: 3em;
-  height: 60vh;
+  height: auto;
   border-radius: 30px;
   background: #fffefeef; /* Semi-transparent white background */
 
@@ -150,7 +151,7 @@ html {
   width: auto;
   color: rgb(0, 0, 0);
   padding: 3em;
-  height: 50vh;
+  height: auto;
   border-radius: 30px;
   background: #fffefeef; /* Semi-transparent white background */
 
@@ -240,8 +241,10 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vh;
+  max-width: 40vh;
+  width: auto;
   min-height: 60vh;
+  height: auto;
   border-radius: 30px;
   background: #9b59b6; /* Violet color */
   box-shadow: 5px 5px 15px #6e2c91,
@@ -404,11 +407,12 @@ html {
 }
 .codingProfiles {
   display: flex;
-  
+
   flex-direction: row;
   text-align: center;
   justify-content: flex-start;
   align-items: center;
+  max-width: 190vh;
   width: 200vh;
   height: 3vh; /* Updated height */
   border-radius: 20px;
@@ -427,14 +431,15 @@ html {
   justify-content: flex-start;
   align-items: center;
   padding-left: 2em;
-  min-width: 60vh;
+  min-width: 20vh;
   width: auto;
-  height: 9vh;
+  padding-right: 2em;
+  height: auto;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border-radius: 1em;
   gap: 0.5em;
-  
+
   box-shadow: 5px 5px 15px #6e2c91,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
 }
@@ -442,24 +447,25 @@ html {
   width: 4vh;
   height: 4vh;
 
-  
   background-image: url("https://img.icons8.com/?size=100&id=9L16NypUzu38&format=png&color=000000"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   /* border: solid black 1px; */
-  
 }
 
 .codef {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2em;
-  min-width: 65vh;
+  min-width: 20vh;
   width: auto;
-  height: 9vh;
+  height: auto;
+  padding-right: 2em;
+
   background-color: #fcfdff;
   color: rgb(0, 0, 0);
   border-radius: 1em;
@@ -470,38 +476,38 @@ html {
 .codef_img {
   width: 4vh; /* Width of the element */
   height: 4vh; /* Height of the element */
-  
-  
+
   background-image: url("https://img.icons8.com/?size=100&id=jldAN67IAsrW&format=png&color=000000"); /* Replace with your image path */
   background-size: cover; /* Ensures the image covers the element */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents image repetition */
 }
-#maxr{
+#maxr {
   color: grey;
-  font-size: 1em;
+  font-size: 0.87em;
 }
-#mycp_title{
-  font-size: 1.1em;color: white;
+#mycp_title {
+  font-size: 1em;
+  color: white;
   background-color: #1f1e1e94;
   padding: 1em;
   border-radius: 0.5em;
 }
-#maxrc{
+#maxrc {
   color: rgb(111, 110, 110);
   padding: 0.3em;
-  padding:0.2 0.5em ;
+  padding: 0.2 0.5em;
   background-color: rgba(0, 0, 0, 0.037);
   border-radius: 0.3em;
   border: solid rgba(170, 170, 170, 0.247) 1px;
-
+  font-size: 0.7em;
 }
 #maxrc {
   position: relative; /* Required for positioning the tooltip */
 }
 
 #maxrc::after {
-  content: 'Check the profile'; /* Text for the tooltip */
+  content: "Check the profile"; /* Text for the tooltip */
   position: absolute; /* Positions the tooltip relative to #maxrc */
   bottom: 100%; /* Position above the element */
   left: 50%; /* Center horizontally */
@@ -527,7 +533,7 @@ html {
 }
 
 #maxrc:hover {
-  content: ''; /* Required to display the pseudo-element */
+  content: ""; /* Required to display the pseudo-element */
   display: block; /* Makes the pseudo-element a block-level element */
   color: #660899; /* Text color */
   border: solid 1px #660899;
@@ -570,8 +576,8 @@ html {
   text-align: center;
   justify-content: center;
   align-items: center;
-  min-width: 190vh;
   width: auto;
+
   height: auto; /* Updated height */
   border-radius: 30px;
   background: #9b59b6; /* Violet color */
@@ -579,6 +585,8 @@ html {
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
   margin-top: 4vh;
   padding: 3em;
+  padding-left: 5em;
+  padding-right: 9em;
 }
 
 .contactPage {
@@ -599,7 +607,6 @@ html {
 }
 /* ---------------------------------- Footer ----------------------------- */
 
-
 .homepage-footer {
   display: flex;
   background-color: #282c34;
@@ -614,13 +621,55 @@ html {
 }
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .card1,
-  .card2,
-  .card {
-    width: 90%;
+  .homepage-header {
     height: auto;
   }
 
+  .card1 {
+    height: auto;
+    width: auto;
+    margin: 0 3em;
+    padding: 0 5em;
+  }
+  .homepage-header nav ul li {
+    height: auto;
+  }
+  .card2,
+  .card {
+    height: auto;
+  }
+  .card {
+    width: auto;
+    margin: 2em 2em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .card_box1 {
+    height: auto;
+    width: auto;
+    margin: 0 1em;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  .codingProfiles {
+    margin-top: 3em;
+    flex-direction: column;
+    min-width: 90vh;
+    width: auto;
+    max-width: 70vh;
+    height: auto;
+  }
+  .codef,
+  .leetc {
+    width: 60vh;
+    height: auto;
+
+    min-height: 8vh;
+  }
+  .skills_ {
+    width: auto;
+  }
   .homepage-main {
     padding: 10px;
     gap: 1em;
@@ -630,14 +679,26 @@ html {
     flex-direction: column;
     gap: 1em;
   }
+  .project_sec {
+    width: auto;
+    padding-right: 5em;
+  }
 }
 
 @media (max-width: 768px) {
   .homepage-header nav ul {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
+    
   }
-
+  .card1 {
+    
+    width: 80%;
+   
+  }
+  #contact{
+display: none;
+  }
   .homepage-header {
     height: auto;
     padding: 10px;
@@ -651,6 +712,18 @@ html {
   .card,
   .side1 {
     padding: 1em;
+  }
+  .codingProfiles{
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+  .codef{
+    width: auto;
+    height: auto;
+  }.leetc{
+    width: auto;
+    height: auto;
   }
 }
 
@@ -669,7 +742,6 @@ html {
   }
 
   .side1,
-  .card1,
   .card2 {
     width: 95%;
     height: auto;

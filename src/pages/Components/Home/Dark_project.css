@@ -62,7 +62,7 @@
     color: #8e8c8c;
   }
   
-  .project-links {
+  .Dark_project-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,19 +74,19 @@
     margin-top: 3em;
   }
   
-  .project-links a {
+  .Dark_project-links a {
     text-decoration: none;
     font-size: 0.9em; /* Adjusted font size */
     color: black;
   }
   
-  .social-icon {
+  .Dark_social-icon {
     width: 25px;
     height: 25px;
     margin: 0 5px;
   }
   
-  .social-icon2 {
+  .Dark_social-icon2 {
     width: 28px;
     height: 28px;
   }
@@ -185,12 +185,12 @@
       padding: 15px; /* Reduce padding on cards */
     }
   
-    .project-links {
+    .Dak_Dark_project-links {
       flex-direction: column; /* Stack links vertically on small screens */
     }
   
     .social-icon,
-    .social-icon2 {
+    .Dark_social-icon2 {
       width: 20px;
       height: 20px; /* Adjust icon size for smaller screens */
     }

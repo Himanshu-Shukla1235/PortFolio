@@ -9,7 +9,7 @@ const projects = [
       "A full-stack To-Do List application built using the MERN stack (MongoDB, Express, React, Node.js). This project allows users to efficiently manage their tasks with features like adding, editing, and deleting to-dos. It includes a responsive interface, real-time updates, and a secure backend, offering a seamless task management experience.",
     link: "https://github.com/Himanshu-Shukla1235/Todolist-",
     github: "https://github.com/Himanshu-Shukla1235/Todolist-",
-    youtube: "https://youtube.com/example/project-two",
+    youtube: "https://www.youtube.com/watch?v=q2BbKMfsrKk&t=34s",
     image: "https://wallpaperaccess.com/full/1489353.jpg",
   },
   {
@@ -17,8 +17,8 @@ const projects = [
     description:
       "Developed a web application for coal mining companies to optimize operations and reduce CO2 emissions using the MERN stack, blockchain, and machine learning. The platform provides data-driven insights and visualizes optimal pathways for minimizing environmental impact, leveraging secure data management with blockchain and predictive analytics through machine learning algorithms.",
     link: "https://example.com/project-three",
-    github: "https://github.com/example/project-three",
-    youtube: "https://youtube.com/example/project-three",
+    github: "https://github.com/Himanshu-Shukla1235/SIH-2024",
+    youtube: "https://github.com/Himanshu-Shukla1235/SIH-2024",
     image:
       "https://bsmedia.business-standard.com/_media/bs/img/article/2023-06/09/full/1686274336-3509.jpg?im=FeatureCrop,size=(826,465)",
   },

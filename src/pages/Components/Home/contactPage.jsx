@@ -6,8 +6,10 @@ const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: '',
+    message: '',   
   });
+
+  const [isDarkMode, setIsDarkMode] = useState(true); // Add state for dark mode toggle
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,10 +29,10 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact-page">
+    <div className={isDarkMode ? "Dark_contact-page" : "contact-page"}>
       <h1>Contact Us</h1>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <div className="form-group">
+      <form className={isDarkMode ? "Dark_contact-form" : "contact-form"} onSubmit={handleSubmit}>
+        <div className={isDarkMode ? "Dark_form-group" : "form-group"}>
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -41,7 +43,7 @@ const ContactPage = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={isDarkMode ? "Dark_form-group" : "form-group"}>
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -52,7 +54,7 @@ const ContactPage = () => {
             required
           />
         </div>
-        <div className="form-group">
+        <div className={isDarkMode ? "Dark_form-group" : "form-group"}>
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
@@ -63,7 +65,9 @@ const ContactPage = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="submit-button">Send Message</button>
+        <button type="submit" className={isDarkMode ? "Dark_submit-button" : "submit-button"}>
+          Send Message
+        </button>
       </form>
     </div>
   );

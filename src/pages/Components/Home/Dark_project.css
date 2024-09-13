@@ -1,0 +1,198 @@
+.Dark_projects-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: #2b2b2b; /* Dark grey background */
+    min-height: 90vh;
+    min-width: 100%; /* Use relative units for width */
+    box-shadow: 5px 5px 15px #151515, -5px -5px 15px #00000000; /* Increased shadow size and opacity */
+    border-radius: 2em;
+    padding: 2em;
+    font-family: sans-serif;
+    
+    margin: auto; /* Centers the element within its parent */
+}
+
+  
+  .Dark_projects-page h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .Dark_projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 5px 5px 15px #00000041, -5px -5px 15px #0000004b; /* Increased shadow size and opacity */
+    padding: 2em; /* Reduced padding for smaller screens */
+    border-radius: 2em;
+  }
+  
+  /* Responsive Project Card */
+  .Dark_project-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%; /* Use relative width for smaller screens */
+    max-width: 300px; /* Maximum width */
+    text-align: center;
+    padding: 20px;
+    margin: 10px; /* Add margin for spacing on smaller screens */
+  }
+  
+  .Dark_project-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .project-description {
+    font-size: 1em;
+    color: #8e8c8c;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    margin-top: 10px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 1.7em;
+    margin-top: 3em;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    font-size: 0.9em; /* Adjusted font size */
+    color: black;
+  }
+  
+  .social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
+  
+  .social-icon2 {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1024px) {
+    .Dark_projects-page {
+      padding: 10px;
+      
+      min-width: 90vw;
+      
+      /* Adjust width for tablets */
+    }
+  
+    .Dark_projects-container {
+        padding-top: 1em;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        height: 60vh;
+        background-color: rgb(36, 36, 36); /* Adjust gap between cards */
+        scroll-behavior: smooth; /* Smooth scrolling */
+        
+        /* Scrollbar styling for Firefox */
+        scrollbar-width: thin; /* Options: auto, thin, none */
+        scrollbar-color: #6e2c91 #2b2b2b; /* Thumb color and track color */
+        overflow-x: hidden;
+    }
+    
+    /* Scrollbar styling for WebKit browsers */
+    .Dark_projects-container::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+    }
+    
+    .Dark_projects-container::-webkit-scrollbar-track {
+        background: #2b2b2b; /* Track color */
+        border-radius: 10px; /* Optional: round corners */
+    }
+    
+    .Dark_projects-container::-webkit-scrollbar-thumb {
+        background-color: #6e2c91; /* Thumb color */
+        border-radius: 10px; /* Optional: round corners */
+        border: 2px solid #2b2b2b; /* Adds a border around the thumb */
+    }
+    
+    /* Hiding all scrollbar buttons (vertical corner triangles) */
+    .Dark_projects-container::-webkit-scrollbar-button {
+        display: none; /* Hides the up and down arrows */
+    }
+    
+    /* Additional specificity to ensure hiding */
+    .Dark_projects-container::-webkit-scrollbar-button:vertical:increment,
+    .Dark_projects-container::-webkit-scrollbar-button:vertical:decrement {
+        display: none; /* Explicitly hides each vertical scrollbar button */
+    }
+    
+    .Dark_project-card {
+      width: 45%; /* Adjust card width for tablets */
+      max-width: 400px; /* Limit the max width */
+      min-height: 75vh;
+      width: auto;
+      height: auto;
+      
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Dark_projects-page {
+      padding: 10px;
+    }
+  
+    .Dark_projects-container {
+      padding: 1em; /* Reduce padding for smaller screens */
+    }
+  
+    .Dark_project-card {
+      width: 80%; /* Make the cards wider for smaller screens */
+    }
+  
+    .project-title {
+      font-size: 1.3em; /* Reduce title size on smaller screens */
+    }
+  
+    .project-description {
+      font-size: 0.9em; /* Reduce description size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Dark_project-card {
+      width: 90%; /* Use almost full width for mobile */
+      padding: 15px; /* Reduce padding on cards */
+    }
+  
+    .project-links {
+      flex-direction: column; /* Stack links vertically on small screens */
+    }
+  
+    .social-icon,
+    .social-icon2 {
+      width: 20px;
+      height: 20px; /* Adjust icon size for smaller screens */
+    }
+  }
+  

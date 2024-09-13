@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import React, {useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import "./Home.css"; // Import CSS file for styling
 import Skills from "../Components/Home/Skills";
 import HomeIcon from "@mui/icons-material/Home";
@@ -13,50 +13,77 @@ import AboutPage from "../Components/Home/aboutPage";
 import Tooltip from "../Components/Additional/toolTip.jsx";
 import BoxAnimation from "../Components/Additional/animatedBox.jsx";
 import Gearbox from "../Components/Additional/animation2.jsx";
+import "./Home_DarkMode.css";
+import { DarkMode } from "@mui/icons-material";
 
 const HomePage = () => {
+  const [switchClass, setSwitchClass] = useState("small_switch");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setSwitchClass("big_switch");
+      } else {
+        setSwitchClass("small_switch");
+      }
+    };
+
+    // Set initial class name
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const [darkMode, setDarkMode] = useState(false); // State to manage dark mode
+
+
+  // Toggle Dark Mode
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  // Determine the class name prefix based on the dark mode state
+  const classNamePrefix = darkMode ? "Dark_" : "";
+
   return (
-    <div className="homepage">
-      <header className="homepage-header">
-        <div className="card1">
+    <div className={`${classNamePrefix}homepage`}>
+      <header className={`${classNamePrefix}homepage-header`}>
+      <div style={{color:'transparent'}}>logo</div>
+        <div className={`${classNamePrefix}card1`}>
           <nav>
             <ul>
               <li>
-                <HomeIcon
-                  style={{ fontSize: "19px", marginBottom: "2.5px" }}
-                ></HomeIcon>
+                <HomeIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
                 <Link to="home" smooth={true} duration={20} offset={-90}>
                   Home
                 </Link>
               </li>
               <li>
-                <MilitaryTechIcon
-                  style={{ fontSize: "19px", marginBottom: "2.5px" }}
-                ></MilitaryTechIcon>
+                <MilitaryTechIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
                 <Link to="Skills" smooth={true} duration={20} offset={-220}>
                   Skills
                 </Link>
               </li>
               <li>
-                <AppRegistrationIcon
-                  style={{ fontSize: "19px", marginBottom: "2.5px" }}
-                ></AppRegistrationIcon>
+                <AppRegistrationIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
                 <Link to="Projects__" smooth={true} duration={20}>
                   Projects
                 </Link>
               </li>
               <li>
-                <InfoIcon
-                  style={{ fontSize: "19px", marginBottom: "2.5px" }}
-                ></InfoIcon>
+                <InfoIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
                 <Link to="about_page" smooth={true} duration={20} offset={-100}>
                   About
                 </Link>
               </li>
               <li id="contact">
-                <PhoneEnabledIcon
-                  style={{ fontSize: "19px", marginBottom: "2.5px" }}
-                ></PhoneEnabledIcon>
+                <PhoneEnabledIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
                 <Link to="contact" smooth={true} duration={20}>
                   Contact
                 </Link>
@@ -64,91 +91,108 @@ const HomePage = () => {
             </ul>
           </nav>
         </div>
+        <label className="switch">
+          <input 
+            type="checkbox" 
+            checked={darkMode} 
+            onChange={toggleDarkMode} 
+          />
+          <span className="slider"></span>
+        </label>
       </header>
 
-      <main className="homepage-main">
-        <section className="intro" id="home">
-          <div className="card">
-            <div className="card_box1">
-              {" "}
-              <h1>Software Engineer </h1>
-              <p style={{}}>
+      <main className={`${classNamePrefix}homepage-main`}>
+      <label className={switchClass}>
+          <input 
+            type="checkbox" 
+            checked={darkMode} 
+            onChange={toggleDarkMode} 
+          />
+          <span className="slider"></span>
+        </label>
+        <section className={`${classNamePrefix}intro`} id="home">
+          <div className={`${classNamePrefix}card`}>
+            <div className={`${classNamePrefix}card_box1`}>
+              <h1>Software Engineer</h1>
+              <p>
                 Hello! I'm Himanshu Shukla, a passionate software engineer with
                 a keen interest in solving complex problems through innovative
                 coding solutions. With a strong foundation in mathematics and
                 computing, I enjoy building efficient and scalable applications,
                 leveraging modern technologies to create impactful software.
-                <br></br>
+                <br />
                 Beyond development, I thrive in the competitive programming
                 space, constantly challenging myself to optimize algorithms and
                 enhance my problem-solving skills. Whether it's through
                 hackathons, coding contests, or collaborative projects, I'm
                 driven by a relentless pursuit of learning and excellence in the
                 tech world.
-                <br></br>
-                <br></br>
+                <br />
+                <br />
                 Let's build something amazing together!
               </p>
-              <div className="mern">
-                <div className="mongo"></div>
-                <div className="expressjs"></div>
-                <div className="react"></div>
-                <div className="nodejs"></div>
+              <div className={`${classNamePrefix}mern`}>
+                <div className={`${classNamePrefix}mongo`}></div>
+                <div className={`${classNamePrefix}expressjs`}></div>
+                <div className={`${classNamePrefix}react`}></div>
+                <div className={`${classNamePrefix}nodejs`}></div>
               </div>
             </div>
           </div>
-          <div className="side1">
-            <div className="Dp"></div>
-            <p style={{}}>Himanshu Shukla</p>
-            <div className="myinfo">
-              <div className="my_inf">
+       
+          <div className={`${classNamePrefix}side1`}>
+            <div className={`${classNamePrefix}Dp`}></div>
+            <p>Himanshu Shukla</p>
+            <div className={`${classNamePrefix}myinfo`}>
+              <div className={`${classNamePrefix}my_inf`}>
                 <li>B.Tech in Mathematics And Computing</li>
-                <li>under-Graduate</li>
+                <li>Under-Graduate</li>
                 <li>3rd-year</li>
               </div>
-              <div className="mylogoes">
+              <div className={`${classNamePrefix}mylogoes`}>
                 <Tooltip content="LinkedIn" position="top">
                   <a
                     href="https://www.linkedin.com/in/himanshu-shukla-444756251/"
-                    className="mylogoes_1"
-                    style={{ display: "inline-block" }} // Ensure the element is visible
+                    className={`${classNamePrefix}mylogoes_1`}
+                    style={{ display: "inline-block" }}
                   ></a>
                 </Tooltip>
 
                 <Tooltip content="GitHub" position="top">
                   <a
                     href="https://github.com/Himanshu-Shukla1235"
-                    className="mylogoes_2"
-                    style={{ display: "inline-block" }} // Ensure the element is visible
+                    className={`${classNamePrefix}mylogoes_2`}
+                    style={{ display: "inline-block" }}
                   ></a>
                 </Tooltip>
 
                 <Tooltip content="Other link 1" position="top">
                   <a
                     href="#"
-                    className="mylogoes_3"
-                    style={{ display: "inline-block" }} // Ensure the element is visible
+                    className={`${classNamePrefix}mylogoes_3`}
+                    style={{ display: "inline-block" }}
                   ></a>
                 </Tooltip>
 
                 <Tooltip content="Other link 2" position="top">
                   <a
                     href="#"
-                    className="mylogoes_4"
-                    style={{ display: "inline-block" }} // Ensure the element is visible
+                    className={`${classNamePrefix}mylogoes_4`}
+                    style={{ display: "inline-block" }}
                   ></a>
                 </Tooltip>
               </div>
             </div>
           </div>
         </section>
-        <section className="codingProfiles">
-          <p id="mycp_title" style={{ fontFamily: "sans-serif"  }}>
-            My coding profiles :
-          </p>{" "}
-          <div className="codef">
-            <a href="" className="codef_img"></a> <p style={{fontSize:'0.87em'}}>Codeforces :</p>{" "}
-            <p id="maxr">Max-raing - 1100 </p>
+        <section className={`${classNamePrefix}codingProfiles`}>
+          <p id="mycp_title" style={{ fontFamily: "sans-serif" }}>
+            My coding profiles:
+          </p>
+          <div className={`${classNamePrefix}codef`}>
+            <a href="" className={`${classNamePrefix}codef_img`}></a>{" "}
+            <p style={{ fontSize: "0.87em" }}>Codeforces :</p>{" "}
+            <p id="maxr">Max-rating - 1100 </p>
             <a href="" style={{ textDecoration: "none" }}>
               <p
                 id="maxrc"
@@ -159,10 +203,11 @@ const HomePage = () => {
               </p>
             </a>
           </div>
-          <div className="leetc">
+          <div className={`${classNamePrefix}leetc`}>
             {" "}
-            <a href="" className="leetc_img"></a><p style={{fontSize:'0.87em'}}>Leetcode :</p>{" "}
-            <p id="maxr">Max-raing - 1600</p>
+            <a href="" className={`${classNamePrefix}leetc_img`}></a>
+            <p style={{ fontSize: "0.87em" }}>Leetcode :</p>{" "}
+            <p id="maxr">Max-rating - 1600</p>
             <a
               href="https://leetcode.com/u/Himanshu_Shukla___/"
               style={{ textDecoration: "none" }}
@@ -177,31 +222,28 @@ const HomePage = () => {
             </a>
           </div>
         </section>
-        <div className="thin-line3"></div>
-        <section className="Skills">
-          <div className="skills_">
-            <h1>Skills</h1> <Skills></Skills>
+        <div className={`${classNamePrefix}thin-line3`}></div>
+        <section className={`${classNamePrefix}Skills`}>
+          <div className={`${classNamePrefix}skills_`}>
+            <h1>Skills</h1> <Skills />
           </div>
         </section>
-        <div className="thin-line3"></div>
+        <div className={`${classNamePrefix}thin-line3`}></div>
         <section id="Projects__">
-          <div className="project_sec">
-            <div>
-              <ProjectsPage></ProjectsPage>
-            </div>
+          <div className={`${classNamePrefix}project_sec`}>
+            <ProjectsPage isDarkMode={darkMode} />
           </div>
         </section>
-        <div className="thin-line3"></div>
-        <section className="about_page">
-          {" "}
-          <AboutPage></AboutPage>
+        <div className={`${classNamePrefix}thin-line3`}></div>
+        <section className={`${classNamePrefix}about_page`}>
+          <AboutPage />
         </section>
       </main>
 
-      <footer className="homepage-footer">
-      <BoxAnimation></BoxAnimation>
+      <footer className={`${classNamePrefix}homepage-footer`}>
+        <BoxAnimation />
         <p>&copy; 2024 My Website. All rights reserved.</p>
-        <BoxAnimation></BoxAnimation>
+        <BoxAnimation />
       </footer>
     </div>
   );

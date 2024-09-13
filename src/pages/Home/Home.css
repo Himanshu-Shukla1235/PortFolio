@@ -616,7 +616,7 @@ html {
   color: white;
   text-align: center;
   padding: 10px;
-  height: 20vh;
+  height: 10vh;
   width: 100%; /* Ensure full width */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }

@@ -51,6 +51,7 @@ html {
   height: 7vh; /* Updated height */
   border-radius: 30px;
   background: #1f1e1e;
+  background-color: transparent;
   border: solid rgba(255, 255, 255, 0) 0.3px;
   padding-right: 2em;
   padding-left: 2em;

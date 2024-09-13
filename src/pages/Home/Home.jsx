@@ -55,6 +55,9 @@ const HomePage = () => {
     <div className={`${classNamePrefix}homepage`}>
       <header className={`${classNamePrefix}homepage-header`}>
       <div style={{color:'transparent'}}>logo</div>
+      
+      
+       
         <div className={`${classNamePrefix}card1`}>
           <nav>
             <ul>

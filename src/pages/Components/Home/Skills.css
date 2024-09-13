@@ -32,7 +32,7 @@
     height: auto;
     border-radius: 30px;
     background: #f7f7f7; /* Violet color */
-    box-shadow: 5px 5px 15px #6e2c91, -5px -5px 15px #00000000;
+    box-shadow: 5px 5px 15px (234, 213, 245), -5px -5px 15px #00000000;
     margin: 0 auto; /* Center horizontally */
     padding: 2em;
   }

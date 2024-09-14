@@ -146,7 +146,7 @@ border: solid rgb(37, 37, 37) 1px;
 
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
     /* Increased shadow size and opacity */ -5px -5px 15px
-      rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
+      rgba(19, 19, 19, 0.2); /* Increased highlight size and opacity */
   background: #191919;
   box-shadow: 5px 5px 15px #010101,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
@@ -196,7 +196,7 @@ border: solid rgb(37, 37, 37) 1px;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 1em;
 }
-.mern {
+.Dark_mern {
   /* border: solid black 1px; */
 
   display: flex;
@@ -206,7 +206,7 @@ border: solid rgb(37, 37, 37) 1px;
   gap: 2em;
   margin-bottom: 2em;
 }
-.mongo {
+.Dark_mongo {
   width: 7vh;
   height: 7vh;
   background-color: rgb(0, 0, 0);
@@ -217,7 +217,7 @@ border: solid rgb(37, 37, 37) 1px;
   background-repeat: no-repeat;
   /* border: solid black 1px; */
 }
-.react {
+.Dark_react {
   width: 7vh;
   height: 7vh;
   background-color: rgb(0, 0, 0);
@@ -228,7 +228,7 @@ border: solid rgb(37, 37, 37) 1px;
   background-repeat: no-repeat;
   /* border: solid black 1px; */
 }
-.nodejs {
+.Dark_nodejs {
   width: 7vh;
   height: 7vh;
   background-color: rgb(0, 0, 0);
@@ -239,7 +239,7 @@ border: solid rgb(37, 37, 37) 1px;
   background-repeat: no-repeat;
   /* border: solid black 1px; */
 }
-.expressjs {
+.Dark_expressjs {
   width: 7vh;
   height: 7vh;
   background-color: rgb(255, 255, 255);

@@ -28,7 +28,7 @@ const projects = [
       "Created a social media platform that allows users to calculate their carbon footprint and share their sustainability efforts. The platform combines user-friendly tools for tracking daily activities with interactive features, enabling users to engage with a community focused on reducing environmental impact.",
     link: "https://example.com/project-four",
     github: "https://github.com/example/project-four",
-    youtube: "https://youtube.com/example/project-four",
+    youtube: "",
     image:
       "https://png.pngtree.com/background/20230613/original/pngtree-large-industrial-factory-with-smoke-coming-out-of-it-picture-image_3426220.jpg",
   },
@@ -37,7 +37,7 @@ const projects = [
     description: "A brief description of project five.",
     link: "https://example.com/project-five",
     github: "https://github.com/example/project-five",
-    youtube: "https://youtube.com/example/project-five",
+    youtube: "",
     image:
       "https://emeritus.org/in/wp-content/uploads/sites/3/2023/01/What-is-machine-learning-Definition-types.jpg.optimal.jpg",
   },

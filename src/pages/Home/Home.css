@@ -107,6 +107,7 @@ html {
   background-color: hsl(0, 0%, 87%);
   background: #9b59b6;
   background: #ede1f4;
+  background-color: white;
   
   width: 100%; /* Ensure full width */
   gap: 2em;
@@ -135,18 +136,19 @@ html {
   height: auto;
   border-radius: 30px;
   background: #fffefeef; /* Semi-transparent white background */
-
+  
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
     /* Increased shadow size and opacity */ -5px -5px 15px
       rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
   background: #9b59b6;
   background-color: #ede1f4;
-  box-shadow: 5px 5px 15px #dcb8f1,
+  box-shadow: 5px 5px 15px #f0e4f7,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
      */
   /* background: #1f1e1e; */
   padding: 2em;
   /* font-family: sans-serif; */
+  background-color: white;
 }
 .card_box1 {
   display: flex;
@@ -267,7 +269,7 @@ html {
   height: 19vh;
   background-color: white;
   border-radius: 1000px;
-  background-image: url("https://i.pinimg.com/550x/e9/71/13/e9711369575daa315e5f4239c3536363.jpg"); /* Replace with your image path */
+  background-image: url("../../assets//my_img.jpg"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -552,9 +554,9 @@ html {
 .thin-line3 {
   height: 3px; /* Adjust the thickness of the line */
   width: 110%;
-  background-color: #ebebeb; /* Change to your preferred color */
+  background-color: #63636337; /* Change to your preferred color */
   /* Adjust spacing around the line */
-  background: #ffffff;
+  background: #b1b1b145;
   border-radius: 5em;
   margin-top: 8em;
 }

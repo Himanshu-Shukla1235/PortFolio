@@ -1,7 +1,7 @@
 // src/AboutPage.js
 import React from 'react';
 import './AboutPage.css'; // Import the CSS file for styling
-import myImage from '../../../assets/my_img.jpg'
+import myImage from '../../../assets/my_img3.jpg'
 
 const AboutPage = () => {
   return (
@@ -15,7 +15,7 @@ const AboutPage = () => {
         />
         <div className="about-text">
           <p>
-            Hello! I'm [Your Name], a passionate developer with a keen interest in web development and software engineering. 
+            Hello! I'm Himanshu Shukla, a passionate developer with a keen interest in web development and software engineering. 
             I enjoy creating responsive and user-friendly web applications using modern technologies like React, Node.js, and more.
           </p>
           <p>

@@ -1,55 +1,53 @@
-/* src/AboutPage.css */
 .about-page {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #2b2b2b;
-    color: #fff;
-    border-radius: 2em;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
-  }
-  
-  .about-page h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #f2f2f2;
-  }
-  
+  padding: 40px; /* Increased padding */
+  max-width: 1000px; /* Increased width of the section */
+  margin: 0 auto;
+  background-color: #2b2b2b;
+  color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.about-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Increased gap between elements */
+}
+
+.about-image {
+  width: 300px; /* Increased size of DP */
+  height: 300px; /* Increased size of DP */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6e2c91;
+}
+
+.about-text {
+  text-align: left;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
   .about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;
+    align-items: flex-start;
   }
-  
-  .about-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #6e2c91;
-  }
-  
+
   .about-text {
-    text-align: left;
-    line-height: 1.6;
-    color: #ddd;
+    max-width: 700px; /* Increased width of text section */
+    padding-left: 30px; /* Increased padding */
   }
-  
-  .about-text p {
-    margin-bottom: 10px;
-  }
-  
-  @media (min-width: 768px) {
-    .about-content {
-      flex-direction: row;
-      align-items: flex-start;
-    }
-  
-    .about-text {
-      max-width: 600px;
-      padding-left: 20px;
-    }
-  }
-  
+}

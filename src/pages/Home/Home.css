@@ -828,7 +828,7 @@ html {
   width: 1.4em;
   left: 0.2em;
   bottom: 0.2em;
-  background-color: white;
+  background-color: rgb(181, 1, 201);
   border-radius: inherit;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
 }

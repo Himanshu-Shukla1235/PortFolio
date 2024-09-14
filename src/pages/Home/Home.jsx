@@ -111,7 +111,7 @@ const HomePage = () => {
             checked={darkMode} 
             onChange={toggleDarkMode} 
           />
-          <span className="slider"></span>
+          <span className={`${switchClass}slider`}></span>
         </label>
         <section className={`${classNamePrefix}intro`} id="home">
           <div className={`${classNamePrefix}card`}>

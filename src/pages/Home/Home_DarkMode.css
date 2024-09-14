@@ -96,12 +96,7 @@ border: solid rgb(37, 37, 37) 1px;
   cursor: pointer;
   font-size: 0.8em;
 }
-.small_switch {
-    display: none;
-}
-.small_slider{
-    display: none;
-}
+
 
 /* * -------------------------------------- main --------------------------------------------------- */
 
@@ -794,62 +789,56 @@ border: solid rgb(37, 37, 37) 1px;
 
 /* From Uiverse.io by gharsh11032000 */ 
 /* The small_switch - the box around the small_slider */
-.big_switch{
-    display: none;
+.big_switch {
+  display: none;
 }
 
 .small_switch {
-    font-size: 14px;
-    position: relative;
-    display: inline-block;
-    width: 3.5em;
-    height: 2em;
-    margin-top: 1.1em;
-    
-  }
-  
-  
-  
-  
-  /* Hide default HTML checkbox */
-  .small_switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The small_slider */
-  .small_slider {
-    position: absolute;
-    cursor: pointer;
-    inset: 0;
-    border: 2px solid #414141;
-    border-radius: 50px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .small_slider:before {
-    position: absolute;
-    content: "";
-    height: 1.4em;
-    width: 1.4em;
-    left: 0.2em;
-    bottom: 0.2em;
-    background-color: white;
-    border-radius: inherit;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .small_switch input:checked + .small_slider {
-    box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
-    border: 2px solid #0974f1;
-  }
-  .small_switch input:checked + .small_slider {
-    box-shadow: 0 0 20px rgba(148, 0, 211, 0.8); /* Changed to violet color */
-    border: 2px solid #9400d3; /* Changed to violet color */
-  }
-  
-  
-  .small_switch input:checked + .small_slider:before {
-    transform: translateX(1.5em);
-  }
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin-top: 1.1em;
+}
+
+.small_switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.small_switchslider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  border: 2px solid #414141;
+  border-radius: 50px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #000000; /* Default background color */
+}
+
+.small_switchslider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  left: 0.2em;
+  bottom: 0.2em;
+  background-color: white;
+  border-radius: inherit;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.small_switch input:checked + .small_switchslider {
+  box-shadow: 0 0 20px rgba(148, 0, 211, 0.8); /* Violet color */
+  border: 2px solid #9400d3; /* Violet color */
+}
+
+.small_switch input:checked + .small_switchslider:before {
+  transform: translateX(1.5em);
+}
+
+.small_switch input:checked + .small_switchslider {
+  background-color: #6e2c91; /* Violet color for checked state */
+}

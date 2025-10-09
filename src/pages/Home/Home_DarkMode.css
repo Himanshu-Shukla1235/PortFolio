@@ -269,7 +269,7 @@ border: solid rgb(37, 37, 37) 1px;
   height: 19vh;
   background-color: white;
   border-radius: 1000px;
-  background-image: url("https://i.pinimg.com/550x/e9/71/13/e9711369575daa315e5f4239c3536363.jpg"); /* Replace with your image path */
+  background-image: url("../../assets//my_img.jpg"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

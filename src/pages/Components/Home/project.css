@@ -5,7 +5,7 @@
   align-items: center;
 
   padding: 20px;
-  background-color: #2b2b2b; /* Dark grey background */
+  background-color: #f9f9f9; /* Dark grey background */
   min-height: 90vh;
   min-width: 100%; /* Use relative units for width */
   box-shadow: 5px 5px 15px rgb(231, 200, 248), -5px -5px 15px #00000000; /* Increased shadow size and opacity */
@@ -18,11 +18,12 @@
 
 .projects-page h1 {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 20px;
 }
 
 .projects-container {
+  
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -31,6 +32,7 @@
   box-shadow: 5px 5px 15px #00000041, -5px -5px 15px #0000004b; /* Increased shadow size and opacity */
   padding: 2em; /* Reduced padding for smaller screens */
   border-radius: 2em;
+  background-color: black;
 }
 
 /* Responsive Project Card */

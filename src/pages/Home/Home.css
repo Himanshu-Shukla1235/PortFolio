@@ -28,6 +28,7 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #9b59b6; /* Violet color */
+  background-color: rgb(1, 117, 179);
   padding: 20px;
   max-height: 10vh;
   color: white;
@@ -40,7 +41,6 @@ html {
   z-index: 1000; /* Keeps the header above other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   gap: 22em;
-
 }
 
 .card1 {
@@ -60,7 +60,7 @@ html {
   padding-left: 2em;
   /* margin-right: 20em; */
 
-  box-shadow: 3px 3px 6px #6e2c9198,
+  box-shadow: 3px 3px 6px #28282841,
     /* Subtle darker violet shadow */ -3px -3px 6px #00000000; /* Subtle lighter violet highlight */
 }
 
@@ -93,6 +93,27 @@ html {
   cursor: pointer;
   font-size: 0.8em;
 }
+.nav-rightPart
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  color: yellow;
+}
+
+.codeforgesite {
+  width: 40px;
+  height: 40px;
+  background-image: url("../../assets/codef.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   background-size: 250%;
+}
 
 /* * -------------------------------------- main --------------------------------------------------- */
 
@@ -108,7 +129,7 @@ html {
   background: #9b59b6;
   background: #ede1f4;
   background-color: white;
-  
+
   width: 100%; /* Ensure full width */
   gap: 2em;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
@@ -136,13 +157,13 @@ html {
   height: auto;
   border-radius: 30px;
   background: #fffefeef; /* Semi-transparent white background */
-  
+
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
     /* Increased shadow size and opacity */ -5px -5px 15px
       rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
   background: #9b59b6;
   background-color: #ede1f4;
-  box-shadow: 5px 5px 15px #f0e4f7,
+  box-shadow: 5px 5px 15px #2f2f2f17,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
      */
   /* background: #1f1e1e; */
@@ -168,14 +189,14 @@ html {
     /* Increased shadow size and opacity */ -5px -5px 15px
       rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
   /* background: #9b59b6;  */
-  box-shadow: 5px 5px 15px #ede1f4,
+  box-shadow: 5px 5px 15px #2626270c,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight
      */
   /* background: #1f1e1e; */
   font-family: sans-serif;
 }
 .card h1 {
-  color: #9b59b6;
+  color: rgb(3, 125, 190);
   /* border: solid black 1px; */
   margin-bottom: -0.1em;
   font-size: 4em;
@@ -285,7 +306,7 @@ html {
   border-radius: 1em;
   height: auto;
   width: 30vh;
-  box-shadow: 5px 5px 15px rgb(234, 213, 245),
+  box-shadow: 5px 5px 15px rgb(213, 228, 245),
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000;
   /* background-color: rgb(255, 255, 255);
   border: solid rgb(255, 0, 0) 1px; */
@@ -309,7 +330,7 @@ html {
     /* Increased shadow size and opacity */ -5px -5px 15px
       rgba(255, 255, 255, 0.2); /* Increased highlight size and opacity */
   /* background: #9b59b6;  */
-  box-shadow: 5px 5px 15px #6e2c91,
+  box-shadow: 5px 5px 15px #2c6291,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000;
   color: #ffffff;
 }
@@ -324,6 +345,7 @@ html {
   /* border: solid red 1px; */
   text-align: start;
   color: grey;
+  margin-left: 7px;
 }
 
 .mylogoes {
@@ -411,8 +433,8 @@ html {
   height: 40vh;
   border-radius: 30px;
   background: #9b59b6; /* Violet color */
-  background-color: #ebc9fd;
-  box-shadow: inset 5px 5px 15px rgb(234, 213, 245),
+  background-color: #c9ecfd;
+  box-shadow: inset 5px 5px 15px rgb(213, 233, 245),
     /* Inner shadow */ inset -5px -5px 15px #00000000; /* Adjusted highlight */
 }
 .codingProfiles {
@@ -427,8 +449,8 @@ html {
   height: 3vh; /* Updated height */
   border-radius: 20px;
   background: #9b59b6; /* Violet color */
-  background-color:#ebc9fd ;
-  box-shadow: 5px 5px 15px rgb(234, 213, 245),
+  background-color: #c9ebfd;
+  box-shadow: 5px 5px 15px rgb(213, 233, 245),
     /* Increased shadow size and opacity */ -5px -5px 15px #0000000a; /* Adjusted highlight */
   margin-top: -2vh;
   gap: 3em;
@@ -451,7 +473,7 @@ html {
   border-radius: 1em;
   gap: 0.5em;
 
-  box-shadow: 5px 5px 15px rgb(234, 213, 245),
+  box-shadow: 5px 5px 15px rgb(213, 231, 245),
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
 }
 .leetc_img {
@@ -481,7 +503,7 @@ html {
   color: rgb(0, 0, 0);
   border-radius: 1em;
   gap: 1em;
-  box-shadow: 5px 5px 15px rgb(234, 213, 245),
+  box-shadow: 5px 5px 15px rgb(213, 229, 245),
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
 }
 .codef_img {
@@ -546,8 +568,8 @@ html {
 #maxrc:hover {
   content: ""; /* Required to display the pseudo-element */
   display: block; /* Makes the pseudo-element a block-level element */
-  color: #660899; /* Text color */
-  border: solid 1px #660899;
+  color: #085899; /* Text color */
+  border: solid 1px #084499;
   /* Add additional styling here */
 }
 
@@ -566,15 +588,18 @@ html {
   text-align: center;
   justify-content: flex-start;
   align-items: center;
-  width: 200vh;
+  width: 190vh;
   height: auto; /* Updated height */
   border-radius: 30px;
-  background: #9b59b6; /* Violet color */
-  background-color:#ebc9fd ;
+  background: #598cb6; /* Violet color */
+  background-color: #c9e1fd;
   box-shadow: 5px 5px 15px (234, 213, 245),
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
   /* margin-top: 4vh; */
   font-family: sans-serif;
+  /* padding-right: 3.5em; */
+  padding: 1em;
+  margin: 1em;
 }
 .skills_ h1 {
   color: rgb(0, 0, 0);
@@ -592,9 +617,9 @@ html {
 
   height: auto; /* Updated height */
   border-radius: 30px;
-  background: #9b59b6; /* Violet color */
-  background-color:#ebc9fd ;
-  box-shadow: 5px 5px 15px rgb(234, 213, 245),
+  background: #598eb6; /* Violet color */
+  background-color: #c9e1fd;
+  box-shadow: 5px 5px 15px rgb(213, 230, 245),
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
   margin-top: 4vh;
   padding: 3em;
@@ -612,8 +637,8 @@ html {
   width: auto;
   height: auto; /* Updated height */
   border-radius: 30px;
-  background: #9b59b6; /* Violet color */
-  box-shadow: 5px 5px 15px #6e2c91,
+  background: #598eb6; /* Violet color */
+  box-shadow: 5px 5px 15px #2c5491,
     /* Increased shadow size and opacity */ -5px -5px 15px #00000000; /* Adjusted highlight */
   margin-top: 4vh;
   padding: 3em;
@@ -737,11 +762,9 @@ html {
   .side1 {
     padding: 1em;
   }
-  .side1{
+  .side1 {
     margin-top: 0.5em;
     height: 70vh;
-    
-    
   }
   .codingProfiles {
     width: auto;
@@ -786,11 +809,9 @@ html {
   }
 }
 
-
 /* -----------------------------------------DARK MODE ----------------------------------*/
 
-
-/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by gharsh11032000 */
 /* The switch - the box around the slider */
 .switch {
   font-size: 14px;
@@ -798,11 +819,7 @@ html {
   display: inline-block;
   width: 3.5em;
   height: 2em;
-  
 }
-
-
-
 
 /* Hide default HTML checkbox */
 .switch input {
@@ -828,9 +845,9 @@ html {
   width: 1.4em;
   left: 0.2em;
   bottom: 0.2em;
-  background-color: rgb(181, 1, 201);
+  background-color: rgb(255, 255, 255);
   border-radius: inherit;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .switch input:checked + .slider {
@@ -841,7 +858,6 @@ html {
   box-shadow: 0 0 20px rgba(148, 0, 211, 0.8); /* Changed to violet color */
   border: 2px solid #9400d3; /* Changed to violet color */
 }
-
 
 .switch input:checked + .slider:before {
   transform: translateX(1.5em);

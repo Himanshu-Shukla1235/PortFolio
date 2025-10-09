@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./Home.css"; // Import CSS file for styling
 import Skills from "../Components/Home/Skills";
@@ -42,7 +42,6 @@ const HomePage = () => {
 
   const [darkMode, setDarkMode] = useState(false); // State to manage dark mode
 
-
   // Toggle Dark Mode
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -54,63 +53,143 @@ const HomePage = () => {
   return (
     <div className={`${classNamePrefix}homepage`}>
       <header className={`${classNamePrefix}homepage-header`}>
-      <div style={{color:'transparent'}}>logo</div>
-      
-      
-       
+        <div style={{ color: "transparent" }}>logo</div>
+
         <div className={`${classNamePrefix}card1`}>
           <nav>
             <ul>
-              <li>
-                <HomeIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
-                <Link to="home" smooth={true} duration={20} offset={-90}>
-                  Home
+              <li style={{ cursor: "pointer" }}>
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={20}
+                  offset={-90}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textDecoration: "none",
+                  }}
+                >
+                  <HomeIcon
+                    style={{
+                      fontSize: "19px",
+                      marginBottom: "2.5px",
+                      marginRight: "5px",
+                    }}
+                  />
+                  <span>Home</span>
                 </Link>
               </li>
-              <li>
-                <MilitaryTechIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
-                <Link to="Skills" smooth={true} duration={20} offset={-220}>
-                  Skills
+
+              <li style={{ cursor: "pointer" }}>
+                <Link
+                  to="Skills"
+                  smooth={true}
+                  duration={20}
+                  offset={-220}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textDecoration: "none",
+                  }}
+                >
+                  <MilitaryTechIcon
+                    style={{
+                      fontSize: "19px",
+                      marginBottom: "2.5px",
+                      marginRight: "5px",
+                    }}
+                  />
+                  <span>Skills</span>
                 </Link>
               </li>
-              <li>
-                <AppRegistrationIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
-                <Link to="Projects__" smooth={true} duration={20}>
-                  Projects
+
+              <li style={{ cursor: "pointer" }}>
+                <Link
+                  to="Projects__"
+                  smooth={true}
+                  duration={20}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textDecoration: "none",
+                  }}
+                >
+                  <AppRegistrationIcon
+                    style={{
+                      fontSize: "19px",
+                      marginBottom: "2.5px",
+                      marginRight: "5px",
+                    }}
+                  />
+                  <span>Projects</span>
                 </Link>
               </li>
-              <li>
-                <InfoIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
-                <Link to="about_page" smooth={true} duration={20} offset={-100}>
-                  About
+
+              <li style={{ cursor: "pointer" }}>
+                <Link
+                  to={`${classNamePrefix}about_page`}
+                  smooth={true}
+                  duration={20}
+                  offset={-100}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textDecoration: "none",
+                  }}
+                >
+                  <InfoIcon
+                    style={{
+                      fontSize: "19px",
+                      marginBottom: "2.5px",
+                      marginRight: "5px",
+                    }}
+                  />
+                  <span>About</span>
                 </Link>
               </li>
-              <li id="contact">
-                <PhoneEnabledIcon style={{ fontSize: "19px", marginBottom: "2.5px" }} />
-                <Link to="contact" smooth={true} duration={20}>
-                  Contact
+
+              <li style={{ cursor: "pointer" }}>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={20}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textDecoration: "none",
+                  }}
+                >
+                  <PhoneEnabledIcon
+                    style={{
+                      fontSize: "19px",
+                      marginBottom: "2.5px",
+                      marginRight: "5px",
+                    }}
+                  />
+                  <span>Contact</span>
                 </Link>
               </li>
             </ul>
           </nav>
         </div>
-        <label className="switch">
-          <input 
-            type="checkbox" 
-            checked={darkMode} 
-            onChange={toggleDarkMode} 
-          />
-          <span className="slider"></span>
-        </label>
+        <div className="nav-rightPart">
+          {" "}
+          <a className="codeforgesite" href="/#/code_forge"></a>{" "}
+          <label className="switch">
+            <input
+              type="checkbox"
+              checked={darkMode}
+              onChange={toggleDarkMode}
+            />
+            <span className="slider"></span>
+          </label>
+        </div>
       </header>
 
       <main className={`${classNamePrefix}homepage-main`}>
-      <label className={switchClass}>
-          <input 
-            type="checkbox" 
-            checked={darkMode} 
-            onChange={toggleDarkMode} 
-          />
+        <label className={switchClass}>
+          <input type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
           <span className={`${switchClass}slider`}></span>
         </label>
         <section className={`${classNamePrefix}intro`} id="home">
@@ -142,7 +221,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-       
+
           <div className={`${classNamePrefix}side1`}>
             <div className={`${classNamePrefix}Dp`}></div>
             <p>Himanshu Shukla</p>
@@ -150,7 +229,7 @@ const HomePage = () => {
               <div className={`${classNamePrefix}my_inf`}>
                 <li>B.Tech in Mathematics And Computing</li>
                 <li>Under-Graduate</li>
-                <li>3rd-year</li>
+                <li>4rd-year</li>
               </div>
               <div className={`${classNamePrefix}mylogoes`}>
                 <Tooltip content="LinkedIn" position="top">
@@ -195,7 +274,7 @@ const HomePage = () => {
           <div className={`${classNamePrefix}codef`}>
             <a href="" className={`${classNamePrefix}codef_img`}></a>{" "}
             <p style={{ fontSize: "0.87em" }}>Codeforces :</p>{" "}
-            <p id="maxr">Max-rating - 1100 </p>
+            <p id="maxr">Max-rating - 1170 </p>
             <a href="" style={{ textDecoration: "none" }}>
               <p
                 id="maxrc"
@@ -206,7 +285,7 @@ const HomePage = () => {
               </p>
             </a>
           </div>
-          <div className={`${classNamePrefix}leetc`}>
+          {/* <div className={`${classNamePrefix}leetc`}>
             {" "}
             <a href="" className={`${classNamePrefix}leetc_img`}></a>
             <p style={{ fontSize: "0.87em" }}>Leetcode :</p>{" "}
@@ -223,7 +302,7 @@ const HomePage = () => {
                 Check-Out
               </p>
             </a>
-          </div>
+          </div> */}
         </section>
         <div className={`${classNamePrefix}thin-line3`}></div>
         <section className={`${classNamePrefix}Skills`}>

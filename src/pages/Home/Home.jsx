@@ -149,7 +149,7 @@ const HomePage = () => {
                 </Link>
               </li>
 
-              <li style={{ cursor: "pointer" }}>
+              {/* <li style={{ cursor: "pointer" }}>
                 <Link
                   to="contact"
                   smooth={true}
@@ -169,7 +169,7 @@ const HomePage = () => {
                   />
                   <span>Contact</span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
@@ -192,6 +192,7 @@ const HomePage = () => {
           <input type="checkbox" checked={darkMode} onChange={toggleDarkMode} />
           <span className={`${switchClass}slider`}></span>
         </label>
+        <a className="codeforgesite1" href="/PortFolio/#/code_forge"></a>{" "}
         <section className={`${classNamePrefix}intro`} id="home">
           <div className={`${classNamePrefix}card`}>
             <div className={`${classNamePrefix}card_box1`}>

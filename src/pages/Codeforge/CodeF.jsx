@@ -93,6 +93,7 @@ useEffect(() => {
   return (
     <div className="codeforge-container">
       {/* Header with Logo + Typing Animation */}
+       <div className="codeforge-logo1" />
       <header className="codeforge-header">
         <div className="codeforge-logo" />
         <h1 className="header-title">
@@ -100,6 +101,8 @@ useEffect(() => {
           <span className="cursor">|</span>
         </h1>
       </header>
+
+     
 
       {/* Courses Section */}
       <section className="courses-section">

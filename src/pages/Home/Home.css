@@ -786,6 +786,7 @@ html {
 @media (max-width: 480px) {
   .homepage-header nav ul {
     gap: 10px;
+ 
   }
 
   .homepage-main {
@@ -795,6 +796,7 @@ html {
   .card {
     padding: 1em;
     width: 95%;
+  
   }
 
   .side1,
@@ -802,11 +804,27 @@ html {
     width: 95%;
     height: auto;
   }
+  .card1{
+   
+    margin-right: 0;
+  }
 
   .thin-line,
   .thin-line2 {
     width: 100%;
   }
+  .codeforgesite1{
+     width: 40px;
+  height: 40px;
+  background-image: url("../../assets/codef.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   background-size: 250%;
+  }
+
 }
 
 /* -----------------------------------------DARK MODE ----------------------------------*/

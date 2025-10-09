@@ -175,7 +175,7 @@ const HomePage = () => {
         </div>
         <div className="nav-rightPart">
           {" "}
-          <a className="codeforgesite" href="/#/code_forge"></a>{" "}
+          <a className="codeforgesite" href="/PortFolio/#/code_forge"></a>{" "}
           <label className="switch">
             <input
               type="checkbox"

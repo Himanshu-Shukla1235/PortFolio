@@ -6,7 +6,13 @@
   font-family: "Poppins", sans-serif;
   color: #000000;
 }
-
+.codef-logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: red 3px solid; */
+}
 /* Header */
 .codeforge-header {
   display: flex;
@@ -174,13 +180,29 @@
   .course-image {
     height: 150px;
   }
+  .codeforge-logo1 {
+    width: 60px;
+    height: 60px;
+    background-image: url("../../assets/codef.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid #ffd90000; /* transparent yellow border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* keep logo on left */
+
+    transform: translateY(-50%);
+    background-size: 290%;
+    margin-top: 29px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
-    .codeforge-header {
-        height: 2.9vh;
-  
-    }
+  .codeforge-header {
+    height: 2.9vh;
+  }
   .header-title {
     font-size: 18px;
     line-height: 1.2;
@@ -222,6 +244,7 @@
     font-size: 14px;
   }
   .codeforge-logo1 {
+   
     width: 60px;
     height: 60px;
     background-image: url("../../assets/codef.svg");
@@ -231,12 +254,10 @@
     border-radius: 50%;
     border: 2px solid #ffd90000; /* transparent yellow border */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  /* keep logo on left */
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-left: 8em;
-    transform: translateY(-50%);
+    /* keep logo on left */
+
+
+   
     background-size: 290%;
     margin-top: 29px;
   }

@@ -6,35 +6,34 @@ const typingLines = [
   "Code your way to success!",
   "Stay motivated, keep learning!",
   "Be creative with every problem!",
-  "Innovate, implement, improve!"
+  "Innovate, implement, improve!",
 ];
-
 
 const CodeForgeSite = () => {
   const [displayText, setDisplayText] = useState("");
-const [lineIndex, setLineIndex] = useState(0);
-const [charIndex, setCharIndex] = useState(0);
+  const [lineIndex, setLineIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
 
-useEffect(() => {
-  const typingSpeed = 100; // ms per character
-  const delayBetweenLines = 1200; // pause before next sentence
+  useEffect(() => {
+    const typingSpeed = 100; // ms per character
+    const delayBetweenLines = 1200; // pause before next sentence
 
-  const timeout = setTimeout(() => {
-    const currentLine = typingLines[lineIndex];
-    if (charIndex < currentLine.length) {
-      setDisplayText((prev) => prev + currentLine.charAt(charIndex));
-      setCharIndex((prev) => prev + 1);
-    } else {
-      setTimeout(() => {
-        setDisplayText("");
-        setCharIndex(0);
-        setLineIndex((lineIndex + 1) % typingLines.length);
-      }, delayBetweenLines);
-    }
-  }, typingSpeed);
+    const timeout = setTimeout(() => {
+      const currentLine = typingLines[lineIndex];
+      if (charIndex < currentLine.length) {
+        setDisplayText((prev) => prev + currentLine.charAt(charIndex));
+        setCharIndex((prev) => prev + 1);
+      } else {
+        setTimeout(() => {
+          setDisplayText("");
+          setCharIndex(0);
+          setLineIndex((lineIndex + 1) % typingLines.length);
+        }, delayBetweenLines);
+      }
+    }, typingSpeed);
 
-  return () => clearTimeout(timeout);
-}, [charIndex, lineIndex]);
+    return () => clearTimeout(timeout);
+  }, [charIndex, lineIndex]);
   const coursesData = [
     {
       name: "DSA Unlocked",
@@ -42,7 +41,7 @@ useEffect(() => {
       price: "₹800 / Month",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJoehktbx7ZSKHAZ4jDJ69LW712P1V3R6DjfR7ocEJcMsDq_5QuGxHKnbbmLEQrkaKT8&usqp=CAU",
-      link: "#",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLScsXB5Luxs4JWCvQ0wvqtw4jU-1FzLeclPkz7LmqohlwH9PsQ/viewform?usp=header",
     },
     {
       name: "Advanced DSA",
@@ -93,7 +92,11 @@ useEffect(() => {
   return (
     <div className="codeforge-container">
       {/* Header with Logo + Typing Animation */}
-       <div className="codeforge-logo1" />
+      <div className="codef-logo-box">
+        {" "}
+        <div className="codeforge-logo1" />
+      </div>
+
       <header className="codeforge-header">
         <div className="codeforge-logo" />
         <h1 className="header-title">
@@ -101,8 +104,6 @@ useEffect(() => {
           <span className="cursor">|</span>
         </h1>
       </header>
-
-     
 
       {/* Courses Section */}
       <section className="courses-section">

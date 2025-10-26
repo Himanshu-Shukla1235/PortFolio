@@ -1,5 +1,5 @@
 import React from 'react';
-import './animation2.css'; // Import the CSS file
+import './sunAnim.css'; // Import the CSS file
 
 const Gearbox = () => {
   return (

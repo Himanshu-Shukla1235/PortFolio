@@ -10,6 +10,7 @@ const skillsData = {
     "JavaScript",
     "SQL",
     "TypeScript",
+    "Java"
   ],
   "Frameworks and Tools": [
     "Git",

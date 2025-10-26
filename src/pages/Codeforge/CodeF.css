@@ -6,12 +6,12 @@
   font-family: "Poppins", sans-serif;
   color: #000000;
 }
-.codef-logo-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* border: red 3px solid; */
+.codef-logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: red 3px solid; */
 }
 /* Header */
 .codeforge-header {
@@ -160,12 +160,29 @@
   margin-bottom: 10px;
 }
 
+.course-struct-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffd700;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+  margin-left: 8em;
+}
+.course-struct-link:hover
+ {
+  background-color: #ffffff;
+  color: #000000;
+}
 /* ======================== */
 /* Responsive Styles */
 /* ======================== */
 @media screen and (max-width: 768px) {
   .codeforge-container {
     padding: 15px 20px;
+
   }
 
   .header-title {
@@ -196,7 +213,6 @@
     background-size: 290%;
     margin-top: 29px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -244,7 +260,6 @@
     font-size: 14px;
   }
   .codeforge-logo1 {
-   
     width: 60px;
     height: 60px;
     background-image: url("../../assets/codef.svg");
@@ -256,8 +271,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     /* keep logo on left */
 
-
-   
     background-size: 290%;
     margin-top: 29px;
   }

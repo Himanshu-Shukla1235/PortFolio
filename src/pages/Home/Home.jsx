@@ -275,8 +275,8 @@ const HomePage = () => {
           <div className={`${classNamePrefix}codef`}>
             <a href="" className={`${classNamePrefix}codef_img`}></a>{" "}
             <p style={{ fontSize: "0.87em" }}>Codeforces :</p>{" "}
-            <p id="maxr">Max-rating - 1170 </p>
-            <a href="" style={{ textDecoration: "none" }}>
+            <p id="maxr">Max-rating - 1190 </p>
+            <a href="https://codeforces.com/profile/Viru_paksh_02" style={{ textDecoration: "none" }}>
               <p
                 id="maxrc"
                 style={{ marginLeft: "1em", textDecoration: "none" }}

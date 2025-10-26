@@ -43,7 +43,7 @@ const CodeForgeSite = () => {
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJoehktbx7ZSKHAZ4jDJ69LW712P1V3R6DjfR7ocEJcMsDq_5QuGxHKnbbmLEQrkaKT8&usqp=CAU",
       link: "https://docs.google.com/forms/d/e/1FAIpQLScsXB5Luxs4JWCvQ0wvqtw4jU-1FzLeclPkz7LmqohlwH9PsQ/viewform?usp=header",
-      openlink:"http://localhost:5173/PortFolio/#/course01"
+      openlink:"https://himanshu-shukla1235.github.io/PortFolio/#/course01"
     },
     {
       name: "Advanced DSA",

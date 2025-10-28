@@ -15,18 +15,26 @@ const codingQuestions = {
         title: "Palidrome Numbers",
         link: "https://leetcode.com/problems/palindrome-number/description/?envType=problem-list-v2&envId=math&utm_source=chatgpt.com",
       },
-      { id: 4, title: "GCD of Odd and Even Sums", link: "https://leetcode.com/problems/gcd-of-odd-and-even-sums/description/" },
-      { id: 5, title: "Factorial Trailing Zeroes", link: "https://leetcode.com/problems/factorial-trailing-zeroes/description/" },
-      {id:6 , title:"A. Race", link: "https://codeforces.com/problemset/problem/2112/A?utm_source=chatgpt.com"}
+      {
+        id: 4,
+        title: "GCD of Odd and Even Sums",
+        link: "https://leetcode.com/problems/gcd-of-odd-and-even-sums/description/",
+      },
+      {
+        id: 5,
+        title: "Factorial Trailing Zeroes",
+        link: "https://leetcode.com/problems/factorial-trailing-zeroes/description/",
+      },
+      {
+        id: 6,
+        title: "A. Race",
+        link: "https://codeforces.com/problemset/problem/2112/A?utm_source=chatgpt.com",
+      },
     ],
-    medium: [
-    
-    ],
+    medium: [],
     hard: [],
   },
-  "03. Bit Magic": {
-  
-  },
+  "03. Bit Magic": {},
   "04. Recursion": {
     easy: [{ id: 11, title: "Factorial using recursion", link: "#" }],
     medium: [{ id: 12, title: "Fibonacci using recursion", link: "#" }],

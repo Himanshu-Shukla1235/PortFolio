@@ -16,7 +16,8 @@ const codingQuestions = {
         link: "https://leetcode.com/problems/palindrome-number/description/?envType=problem-list-v2&envId=math&utm_source=chatgpt.com",
       },
       { id: 4, title: "GCD of Odd and Even Sums", link: "https://leetcode.com/problems/gcd-of-odd-and-even-sums/description/" },
-      { id: 4, title: "Factorial Trailing Zeroes", link: "https://leetcode.com/problems/factorial-trailing-zeroes/description/" },
+      { id: 5, title: "Factorial Trailing Zeroes", link: "https://leetcode.com/problems/factorial-trailing-zeroes/description/" },
+      {id:6 , title:"A. Race", link: "https://codeforces.com/problemset/problem/2112/A?utm_source=chatgpt.com"}
     ],
     medium: [
     

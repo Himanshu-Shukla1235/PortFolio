@@ -10,21 +10,21 @@ const codingQuestions = {
   },
   "02. Mathematics": {
     easy: [
-      { id: 3, title: "Check Prime Number", link: "#" },
-      { id: 4, title: "Find GCD of Two Numbers", link: "#" },
+      {
+        id: 3,
+        title: "Palidrome Numbers",
+        link: "https://leetcode.com/problems/palindrome-number/description/?envType=problem-list-v2&envId=math&utm_source=chatgpt.com",
+      },
+      { id: 4, title: "GCD of Odd and Even Sums", link: "https://leetcode.com/problems/gcd-of-odd-and-even-sums/description/" },
+      { id: 4, title: "Factorial Trailing Zeroes", link: "https://leetcode.com/problems/factorial-trailing-zeroes/description/" },
     ],
     medium: [
-      { id: 5, title: "Sieve of Eratosthenes", link: "#" },
-      { id: 6, title: "Fast Power (Binary Exponentiation)", link: "#" },
+    
     ],
-    hard: [
-      { id: 7, title: "Modular Inverse", link: "#" },
-    ],
+    hard: [],
   },
   "03. Bit Magic": {
-    easy: [{ id: 8, title: "Count set bits", link: "#" }],
-    medium: [{ id: 9, title: "Check if power of 2", link: "#" }],
-    hard: [{ id: 10, title: "Find missing number using XOR", link: "#" }],
+  
   },
   "04. Recursion": {
     easy: [{ id: 11, title: "Factorial using recursion", link: "#" }],
@@ -59,7 +59,9 @@ const codingQuestions = {
   "10. Strings": {
     easy: [{ id: 29, title: "Palindrome Check", link: "#" }],
     medium: [{ id: 30, title: "Anagram Check", link: "#" }],
-    hard: [{ id: 31, title: "Longest substring without repeating chars", link: "#" }],
+    hard: [
+      { id: 31, title: "Longest substring without repeating chars", link: "#" },
+    ],
   },
   "11. Linked List": {
     easy: [{ id: 32, title: "Reverse Linked List", link: "#" }],

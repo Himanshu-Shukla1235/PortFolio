@@ -3,7 +3,6 @@ import "./CourseNo1.css";
 import codingQuestions from "./codingQuestionsData";
 import SunAnimate from "../../Components/Additional/sunAnim";
 
-
 const Course1 = () => {
   const topics = Object.keys(codingQuestions);
   const [selectedTopic, setSelectedTopic] = useState(topics[0]);
@@ -13,12 +12,15 @@ const Course1 = () => {
 
   return (
     <div className="code-questions-page">
-    <div className="course-questions-page-sunAnim"> <SunAnimate></SunAnimate></div>
-   
-      <h1>Coding Practice Questions</h1>
+      <div className="course-questions-page-sunAnim">
+        <SunAnimate />
+      </div>
+
+      <h1 className="page-title">💻 Coding Practice Questions</h1>
 
       <div className="selectors">
         <select
+          className="dropdown"
           value={selectedTopic}
           onChange={(e) => setSelectedTopic(e.target.value)}
         >
@@ -30,6 +32,7 @@ const Course1 = () => {
         </select>
 
         <select
+          className="dropdown"
           value={selectedLevel}
           onChange={(e) => setSelectedLevel(e.target.value)}
         >
@@ -40,16 +43,39 @@ const Course1 = () => {
       </div>
 
       <div className="question-list">
-        <h2>
-          {selectedLevel.charAt(0).toUpperCase() + selectedLevel.slice(1)}{" "}
+        <h2 className="question-heading">
+          {selectedLevel.charAt(0).toUpperCase() + selectedLevel.slice(1)} Level
           Questions
         </h2>
-        <ul>
+
+        <ul className="question-items">
           {questions.map((q) => (
-            <li key={q.id}>
-              <a href={q.link} target="_blank" rel="noopener noreferrer" style={{textDecoration:"none",color:"black"}}>
-                {q.title}
-              </a>
+            <li key={q.id} className="question-card">
+              <div className="question-title">
+                <a
+                  href={q.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="question-link"
+                >
+                  {q.title}
+                </a>
+
+                {q.platform && (
+                  <span className="question-platform">({q.platform})</span>
+                )}
+              </div>
+
+              {q.solution && (
+                <a
+                  href={q.solution}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="solution-btn"
+                >
+                  🔗 View Solution
+                </a>
+              )}
             </li>
           ))}
         </ul>

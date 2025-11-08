@@ -81,7 +81,7 @@ const codingQuestions = {
         title: "EhAb AnD gCd",
         link: "https://codeforces.com/problemset/problem/1325/A",
         platform: "Codeforces",
-        solution: "https://codeforces.com/problemset/status/1325/problem/A",
+        solution: "https://codeforces.com/contest/1325/submission/348021272",
       },
     ],
     hard: [],

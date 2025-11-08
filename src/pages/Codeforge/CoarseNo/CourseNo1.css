@@ -149,6 +149,126 @@
   }
 }
 
+/* ❓ Doubt Button Styling */
+.doubt-btn {
+  background: #222;
+  color: #ffd700;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.doubt-btn:hover {
+  background: #ffd700;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.doubt-btn.active {
+  background: #ffd700;
+  color: #000;
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Align question text and doubt button properly */
+.question-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* Doubt Section */
+.doubt-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.doubt-btn {
+  border: 2px solid #ffd700;
+  border-radius: 6px;
+  background: transparent;
+  color: #ffd700;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  transition: all 0.3s ease;
+}
+
+.doubt-btn:hover:not(:disabled) {
+  background: #ffd700;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.doubt-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.doubt-btn.add {
+  border-color: #000000;
+}
+
+.doubt-btn.undo {
+  border-color: #268e0a;
+  color: #278e0a;
+}
+
+.doubt-btn.undo:hover:not(:disabled) {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.doubt-count {
+  font-weight: 600;
+  color: #333;
+  background: #fff9d6;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .doubt-section {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .doubt-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+  .doubt-count {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .question-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .doubt-btn {
+    align-self: flex-end;
+  }
+}
+
+
 /* 📱 Responsive Design */
 @media (max-width: 768px) {
   .page-title {

@@ -8,7 +8,26 @@ const Course1 = () => {
   const [selectedTopic, setSelectedTopic] = useState(topics[0]);
   const [selectedLevel, setSelectedLevel] = useState("easy");
 
+  // Store doubt counts (per question)
+  const [doubtCounts, setDoubtCounts] = useState({});
+
   const questions = codingQuestions[selectedTopic][selectedLevel];
+
+  // Increment doubt count
+  const addDoubt = (id) => {
+    setDoubtCounts((prev) => ({
+      ...prev,
+      [id]: (prev[id] || 0) + 1,
+    }));
+  };
+
+  // Decrement doubt count
+  const removeDoubt = (id) => {
+    setDoubtCounts((prev) => ({
+      ...prev,
+      [id]: Math.max(0, (prev[id] || 0) - 1),
+    }));
+  };
 
   return (
     <div className="code-questions-page">
@@ -51,31 +70,53 @@ const Course1 = () => {
         <ul className="question-items">
           {questions.map((q) => (
             <li key={q.id} className="question-card">
-              <div className="question-title">
-                <a
-                  href={q.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="question-link"
-                >
-                  {q.title}
-                </a>
+              <div className="question-left">
+                <div className="question-title">
+                  <a
+                    href={q.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="question-link"
+                  >
+                    {q.title}
+                  </a>
+                  {q.platform && (
+                    <span className="question-platform">({q.platform})</span>
+                  )}
+                </div>
 
-                {q.platform && (
-                  <span className="question-platform">({q.platform})</span>
+                {q.solution && (
+                  <a
+                    href={q.solution}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="solution-btn"
+                  >
+                    🔗 View Solution
+                  </a>
                 )}
               </div>
 
-              {q.solution && (
-                <a
-                  href={q.solution}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="solution-btn"
+              <div className="doubt-section">
+                <button
+                  className="doubt-btn add"
+                  onClick={() => addDoubt(q.id)}
                 >
-                  🔗 View Solution
-                </a>
-              )}
+                  ➕ Doubt
+                </button>
+
+                <span className="doubt-count">
+                  {doubtCounts[q.id] || 0} people
+                </span>
+
+                <button
+                  className="doubt-btn undo"
+                  onClick={() => removeDoubt(q.id)}
+                  disabled={(doubtCounts[q.id] || 0) === 0}
+                >
+                  🔙 Undo
+                </button>
+              </div>
             </li>
           ))}
         </ul>

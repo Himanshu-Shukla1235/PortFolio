@@ -239,8 +239,128 @@
   padding: 5px 10px;
   font-size: 0.9rem;
 }
+/* clas notes */
+/* Notes Section */
+.coarse_notes {
+  margin-top: 5px;
+  padding: 25px;
+  background: #0d0d0d;
+  
+  box-shadow: 0px 0px 15px rgba(255, 230, 0, 0.2);
+}
 
-/* Responsive Layout */
+.notes-heading {
+  color: #ffffff;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.2px;
+
+  /* Shiny Glow Effect */
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.8),
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 245, 99, 0.6),
+    0 0 30px rgba(255, 230, 0, 0.5);
+}
+.notes-heading {
+  color: #f7d83d; /* Light warm yellow */
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 650;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+
+  animation: yellowGlow 2.5s infinite ease-in-out;
+}
+
+/* Smooth Yellow Glow Animation */
+@keyframes yellowGlow {
+  0% {
+    text-shadow: 
+      0 0 4px rgba(255, 223, 84, 0.3),
+      0 0 10px rgba(255, 200, 60, 0.25);
+  }
+  50% {
+    text-shadow: 
+      0 0 8px rgba(255, 236, 120, 0.6),
+      0 0 18px rgba(255, 210, 70, 0.45);
+  }
+  100% {
+    text-shadow: 
+      0 0 4px rgba(255, 223, 84, 0.3),
+      0 0 10px rgba(255, 200, 60, 0.25);
+  }
+}
+
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-card {
+  background: #1a1a1a;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 14px;
+  border-left: 6px solid #ffe600;
+  transition: 0.3s ease;
+}
+
+.note-card:hover {
+  background: #292929;
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 12px rgba(255, 230, 0, 0.4);
+}
+
+.note-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.note-link:hover {
+  color: #000000;
+}
+.note-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.drive-btn {
+  background: #ffffff;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  font-family: sans-serif;
+}
+
+.drive-btn:hover {
+  background: #fff200;
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 10px rgba(255, 230, 0, 0.4);
+}
+
+
+/*--------------------------- Responsive Layout------------------ */
 @media (max-width: 600px) {
   .doubt-section {
     justify-content: flex-start;

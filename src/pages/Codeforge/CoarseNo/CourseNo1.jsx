@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./CourseNo1.css";
 import codingQuestions from "./codingQuestionsData";
 import SunAnimate from "../../Components/Additional/sunAnim";
+import courseNotes from "./courseNotesData";
 
 const Course1 = () => {
   const topics = Object.keys(codingQuestions);
@@ -30,98 +31,123 @@ const Course1 = () => {
   };
 
   return (
-    <div className="code-questions-page">
-      <div className="course-questions-page-sunAnim">
-        <SunAnimate />
-      </div>
+    <>
+      <div className="code-questions-page">
+        <div className="course-questions-page-sunAnim">
+          <SunAnimate />
+        </div>
 
-      <h1 className="page-title">💻 Coding Practice Questions</h1>
+        <h1 className="page-title">💻 Coding Practice Questions</h1>
 
-      <div className="selectors">
-        <select
-          className="dropdown"
-          value={selectedTopic}
-          onChange={(e) => setSelectedTopic(e.target.value)}
-        >
-          {topics.map((topic) => (
-            <option key={topic} value={topic}>
-              {topic.charAt(0).toUpperCase() + topic.slice(1)}
-            </option>
-          ))}
-        </select>
+        <div className="selectors">
+          <select
+            className="dropdown"
+            value={selectedTopic}
+            onChange={(e) => setSelectedTopic(e.target.value)}
+          >
+            {topics.map((topic) => (
+              <option key={topic} value={topic}>
+                {topic.charAt(0).toUpperCase() + topic.slice(1)}
+              </option>
+            ))}
+          </select>
 
-        <select
-          className="dropdown"
-          value={selectedLevel}
-          onChange={(e) => setSelectedLevel(e.target.value)}
-        >
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
-        </select>
-      </div>
+          <select
+            className="dropdown"
+            value={selectedLevel}
+            onChange={(e) => setSelectedLevel(e.target.value)}
+          >
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
 
-      <div className="question-list">
-        <h2 className="question-heading">
-          {selectedLevel.charAt(0).toUpperCase() + selectedLevel.slice(1)} Level
-          Questions
-        </h2>
+        <div className="question-list">
+          <h2 className="question-heading">
+            {selectedLevel.charAt(0).toUpperCase() + selectedLevel.slice(1)}{" "}
+            Level Questions
+          </h2>
 
-        <ul className="question-items">
-          {questions.map((q) => (
-            <li key={q.id} className="question-card">
-              <div className="question-left">
-                <div className="question-title">
-                  <a
-                    href={q.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="question-link"
-                  >
-                    {q.title}
-                  </a>
-                  {q.platform && (
-                    <span className="question-platform">({q.platform})</span>
+          <ul className="question-items">
+            {questions.map((q) => (
+              <li key={q.id} className="question-card">
+                <div className="question-left">
+                  <div className="question-title">
+                    <a
+                      href={q.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="question-link"
+                    >
+                      {q.title}
+                    </a>
+                    {q.platform && (
+                      <span className="question-platform">({q.platform})</span>
+                    )}
+                  </div>
+
+                  {q.solution && (
+                    <a
+                      href={q.solution}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="solution-btn"
+                    >
+                      🔗 View Solution
+                    </a>
                   )}
                 </div>
 
-                {q.solution && (
-                  <a
-                    href={q.solution}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="solution-btn"
+                <div className="doubt-section">
+                  <button
+                    className="doubt-btn add"
+                    onClick={() => addDoubt(q.id)}
                   >
-                    🔗 View Solution
-                  </a>
-                )}
-              </div>
+                    ➕ Doubt
+                  </button>
 
-              <div className="doubt-section">
-                <button
-                  className="doubt-btn add"
-                  onClick={() => addDoubt(q.id)}
-                >
-                  ➕ Doubt
-                </button>
+                  <span className="doubt-count">
+                    {doubtCounts[q.id] || 0} people
+                  </span>
 
-                <span className="doubt-count">
-                  {doubtCounts[q.id] || 0} people
-                </span>
-
-                <button
-                  className="doubt-btn undo"
-                  onClick={() => removeDoubt(q.id)}
-                  disabled={(doubtCounts[q.id] || 0) === 0}
-                >
-                  🔙 Undo
-                </button>
-              </div>
-            </li>
-          ))}
-        </ul>
+                  <button
+                    className="doubt-btn undo"
+                    onClick={() => removeDoubt(q.id)}
+                    disabled={(doubtCounts[q.id] || 0) === 0}
+                  >
+                    🔙 Undo
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
+      <div className="coarse_notes">
+  <h2 className="notes-heading"> 📚 Course Notes </h2>
+
+  <ul className="notes-list">
+    {courseNotes.map((note) => (
+      <li key={note.id} className="note-card">
+        <div className="note-content">
+          <span className="note-title">{note.title}</span>
+
+          <a
+            href={note.link}
+            target="_blank"
+            rel="noreferrer"
+            className="drive-btn"
+          >
+            📁 Drive
+          </a>
+        </div>
+      </li>
+    ))}
+  </ul>
+</div>
+
+    </>
   );
 };
 

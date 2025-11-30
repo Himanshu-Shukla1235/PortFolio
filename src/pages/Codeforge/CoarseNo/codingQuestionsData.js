@@ -2,8 +2,20 @@
 const codingQuestions = {
   "01. Introduction": {
     easy: [
-      { id: 1, title: "Print Hello World", link: "#", platform: "Basic", solution: "#" },
-      { id: 2, title: "Basic Input and Output", link: "#", platform: "Basic", solution: "#" },
+      {
+        id: 1,
+        title: "Print Hello World",
+        link: "#",
+        platform: "Basic",
+        solution: "#",
+      },
+      {
+        id: 2,
+        title: "Basic Input and Output",
+        link: "#",
+        platform: "Basic",
+        solution: "#",
+      },
     ],
     medium: [],
     hard: [],
@@ -30,7 +42,8 @@ const codingQuestions = {
         title: "Factorial Trailing Zeroes",
         link: "https://leetcode.com/problems/factorial-trailing-zeroes/",
         platform: "LeetCode",
-        solution: "https://leetcode.com/problems/factorial-trailing-zeroes/solutions/",
+        solution:
+          "https://leetcode.com/problems/factorial-trailing-zeroes/solutions/",
       },
       {
         id: 6,
@@ -46,21 +59,24 @@ const codingQuestions = {
         title: "Smallest Integer Divisible by K",
         link: "https://leetcode.com/problems/smallest-integer-divisible-by-k/",
         platform: "LeetCode",
-        solution: "https://leetcode.com/problems/smallest-integer-divisible-by-k/post-solution/?submissionId=1823973642",
+        solution:
+          "https://leetcode.com/problems/smallest-integer-divisible-by-k/post-solution/?submissionId=1823973642",
       },
       {
         id: 8,
         title: "Angle Between Hands of a Clock",
         link: "https://leetcode.com/problems/angle-between-hands-of-a-clock/",
         platform: "LeetCode",
-        solution: "https://leetcode.com/problems/angle-between-hands-of-a-clock/post-solution/?submissionId=1823996242",
+        solution:
+          "https://leetcode.com/problems/angle-between-hands-of-a-clock/post-solution/?submissionId=1823996242",
       },
       {
         id: 9,
         title: "The kth Factor of n",
         link: "https://leetcode.com/problems/the-kth-factor-of-n/",
         platform: "LeetCode",
-        solution: "https://leetcode.com/problems/the-kth-factor-of-n/post-solution/?submissionId=1824001243",
+        solution:
+          "https://leetcode.com/problems/the-kth-factor-of-n/post-solution/?submissionId=1824001243",
       },
       {
         id: 10,
@@ -74,7 +90,8 @@ const codingQuestions = {
         title: "Closest Divisors",
         link: "https://leetcode.com/problems/closest-divisors/",
         platform: "LeetCode",
-        solution: "https://leetcode.com/problems/closest-divisors/post-solution/?submissionId=1824039071",
+        solution:
+          "https://leetcode.com/problems/closest-divisors/post-solution/?submissionId=1824039071",
       },
       {
         id: 12,
@@ -88,188 +105,559 @@ const codingQuestions = {
   },
 
   "03. Bit Magic": {
-    easy: [],
-    medium: [],
-    hard: [],
+    easy: [
+      {
+        id: 13,
+        title: " Number of 1 Bits",
+        link: "https://leetcode.com/problems/number-of-1-bits/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 14,
+        title: "Single Number",
+        link: "https://leetcode.com/problems/single-number/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 15,
+        title: "Missing Number",
+        link: "https://leetcode.com/problems/missing-number/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 16,
+        title: "Missing Number",
+        link: "https://leetcode.com/problems/missing-number/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 17,
+        title: "Reverse Bits",
+        link: "https://leetcode.com/problems/reverse-bits/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+    ],
+    medium: [
+      {
+        id: 18,
+        title: "Single Number II",
+        link: "https://leetcode.com/problems/single-number-ii/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 19,
+        title: "Maximum XOR of Two Numbers in an Array",
+        link: "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 20,
+        title: "Bitwise AND of Numbers Range",
+        link: "https://leetcode.com/problems/bitwise-and-of-numbers-range/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 21,
+        title: "Repeated DNA Sequences",
+        link: "https://leetcode.com/problems/repeated-dna-sequences/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 22,
+        title: "Sum of Two Integers",
+        link: "https://leetcode.com/problems/sum-of-two-integers/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 23,
+        title: "Hamming Distance",
+        link: "https://leetcode.com/problems/hamming-distance/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+    ],
+    hard: [
+      {
+        id: 24,
+        title: "Maximum XOR With an Element From Array",
+        link: "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/description/",
+        platform: "LeetCode",
+        solution: "",
+      },
+      {
+        id: 25,
+        title: "Minimum Number of Flips to Make the Binary String Alternating",
+        link: "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/",
+        platform: "LeetCode",
+        solution: "",
+      },
+           {
+        id: 26,
+        title: "Cracking the Safe",
+        link: "https://leetcode.com/problems/cracking-the-safe/",
+        platform: "LeetCode",
+        solution: "",
+      },
+    ],
   },
 
   "04. Recursion": {
     easy: [
-      { id: 13, title: "Factorial using recursion", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 13,
+        title: "Factorial using recursion",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 14, title: "Fibonacci using recursion", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 14,
+        title: "Fibonacci using recursion",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 15, title: "N-Queens Problem", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 15,
+        title: "N-Queens Problem",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "05. Arrays": {
     easy: [
-      { id: 16, title: "Find largest element", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 16,
+        title: "Find largest element",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 17, title: "Rotate array by K", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 17,
+        title: "Rotate array by K",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 18, title: "Kadane’s Algorithm", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 18,
+        title: "Kadane’s Algorithm",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "06. Searching": {
     easy: [
-      { id: 19, title: "Linear Search", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 19,
+        title: "Linear Search",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 20, title: "Binary Search", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 20,
+        title: "Binary Search",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 21, title: "Search in rotated array", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 21,
+        title: "Search in rotated array",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "07. Sorting": {
     easy: [
-      { id: 22, title: "Bubble Sort", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 22,
+        title: "Bubble Sort",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 23, title: "Merge Sort", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 23,
+        title: "Merge Sort",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 24, title: "Quick Sort", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 24,
+        title: "Quick Sort",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "08. Matrix": {
     easy: [
-      { id: 25, title: "Print Matrix", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 25,
+        title: "Print Matrix",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 26, title: "Rotate Matrix", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 26,
+        title: "Rotate Matrix",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 27, title: "Spiral Traversal", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 27,
+        title: "Spiral Traversal",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "09. Hashing": {
     easy: [
-      { id: 28, title: "Count frequency", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 28,
+        title: "Count frequency",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 29, title: "Subarray with given sum", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 29,
+        title: "Subarray with given sum",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 30, title: "Longest subarray with 0 sum", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 30,
+        title: "Longest subarray with 0 sum",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "10. Strings": {
     easy: [
-      { id: 31, title: "Palindrome Check", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 31,
+        title: "Palindrome Check",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 32, title: "Anagram Check", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 32,
+        title: "Anagram Check",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 33, title: "Longest substring without repeating chars", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 33,
+        title: "Longest substring without repeating chars",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "11. Linked List": {
     easy: [
-      { id: 34, title: "Reverse Linked List", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 34,
+        title: "Reverse Linked List",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 35, title: "Detect Loop", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 35,
+        title: "Detect Loop",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 36, title: "Intersection Point of Two LL", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 36,
+        title: "Intersection Point of Two LL",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "12. Stack": {
     easy: [
-      { id: 37, title: "Implement Stack using Array", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 37,
+        title: "Implement Stack using Array",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 38, title: "Next Greater Element", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 38,
+        title: "Next Greater Element",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 39, title: "Stock Span Problem", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 39,
+        title: "Stock Span Problem",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "13. Queue": {
     easy: [
-      { id: 40, title: "Implement Queue", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 40,
+        title: "Implement Queue",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 41, title: "Circular Queue", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 41,
+        title: "Circular Queue",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 42, title: "LRU Cache", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 42,
+        title: "LRU Cache",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "14. Deque": {
     easy: [
-      { id: 43, title: "Implement Deque", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 43,
+        title: "Implement Deque",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 44, title: "Sliding Window Maximum", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 44,
+        title: "Sliding Window Maximum",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 45, title: "Deque based optimization", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 45,
+        title: "Deque based optimization",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "15. Tree": {
     easy: [
-      { id: 46, title: "Tree Traversal", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 46,
+        title: "Tree Traversal",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 47, title: "Height of Binary Tree", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 47,
+        title: "Height of Binary Tree",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 48, title: "Lowest Common Ancestor", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 48,
+        title: "Lowest Common Ancestor",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "16. Binary Search Tree": {
     easy: [
-      { id: 49, title: "Insert in BST", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 49,
+        title: "Insert in BST",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 50, title: "Delete Node in BST", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 50,
+        title: "Delete Node in BST",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 51, title: "Inorder Successor", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 51,
+        title: "Inorder Successor",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "17. Heap": {
     easy: [
-      { id: 52, title: "Heapify Process", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 52,
+        title: "Heapify Process",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 53, title: "Kth Largest Element", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 53,
+        title: "Kth Largest Element",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 54, title: "Merge K Sorted Arrays", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 54,
+        title: "Merge K Sorted Arrays",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 
   "18. Graph": {
     easy: [
-      { id: 55, title: "BFS Traversal", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 55,
+        title: "BFS Traversal",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     medium: [
-      { id: 56, title: "DFS Traversal", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 56,
+        title: "DFS Traversal",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
     hard: [
-      { id: 57, title: "Dijkstra’s Algorithm", link: "#", platform: "Custom", solution: "#" },
+      {
+        id: 57,
+        title: "Dijkstra’s Algorithm",
+        link: "#",
+        platform: "Custom",
+        solution: "#",
+      },
     ],
   },
 };
